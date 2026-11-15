@@ -1,0 +1,20 @@
+name: pset2
+version: "1.0.0"
+config-version: 2
+profile: pset2
+
+model-paths: ["models"]
+macro-paths: ["macros"]
+test-paths: ["tests"]
+
+models:
+  pset2:
+    bronze:
+      +schema: BRONZE
+      +materialized: table
+    silver:
+      +schema: SILVER
+      +materialized: table
+    gold:
+      +schema: GOLD
+      +materialized: table

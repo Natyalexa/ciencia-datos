@@ -1,0 +1,33 @@
+version: 2
+
+models:
+  - name: slv_resenas
+    description: >
+      Reseñas limpias, con datos personales enmascarados y banderas de calidad.
+      Grano: una fila por reseña (review_id). No elimina filas respecto a Bronze.
+    columns:
+      - name: review_id
+        data_tests:
+          - not_null
+          - unique
+      - name: banco
+        data_tests:
+          - not_null
+      - name: comentario_limpio
+        description: Comentario con correos y números largos enmascarados y espacios normalizados.
+        data_tests:
+          - not_null
+      - name: sentimiento_estrellas
+        description: Etiqueta derivada de la calificación (1-2 negativo, 3 neutro, 4-5 positivo).
+        data_tests:
+          - not_null
+          - accepted_values:
+              arguments:
+                values: [negativo, neutro, positivo]
+      - name: version_app
+        description: Versión de la app; 'desconocida' cuando Google Play no la entrega.
+        data_tests:
+          - not_null
+      - name: fecha_resena
+        data_tests:
+          - not_null

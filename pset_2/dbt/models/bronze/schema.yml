@@ -1,0 +1,38 @@
+version: 2
+
+models:
+  - name: brz_resenas
+    description: >
+      Reseñas de Google Play tipadas y sin review_id duplicado.
+      Grano: una fila por reseña (review_id).
+    columns:
+      - name: review_id
+        description: ID único de la reseña en Google Play.
+        data_tests:
+          - not_null
+          - unique
+      - name: banco
+        data_tests:
+          - not_null
+          - accepted_values:
+              arguments:
+                values:
+                  - Banco Pichincha
+                  - Banco Guayaquil
+                  - Produbanco
+                  - Diners Club (blu)
+                  - Banco del Pacífico
+                  - Banco Bolivariano
+                  - Banco del Austro
+                  - Cooperativa JEP
+      - name: calificacion
+        description: Estrellas de 1 a 5.
+        data_tests:
+          - not_null
+          - accepted_values:
+              arguments:
+                values: [1, 2, 3, 4, 5]
+                quote: false
+      - name: fecha_resena
+        data_tests:
+          - not_null

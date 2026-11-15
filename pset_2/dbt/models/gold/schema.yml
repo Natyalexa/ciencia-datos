@@ -1,0 +1,66 @@
+version: 2
+
+models:
+  - name: dim_banco
+    description: Una fila por entidad financiera.
+    columns:
+      - name: banco_key
+        data_tests: [not_null, unique]
+      - name: banco
+        data_tests: [not_null, unique]
+      - name: app_id
+        data_tests: [not_null, unique]
+
+  - name: dim_fecha
+    description: Un día por fila, del primer al último día con reseñas.
+    columns:
+      - name: fecha_key
+        data_tests: [not_null, unique]
+      - name: fecha
+        data_tests: [not_null, unique]
+
+  - name: dim_version_app
+    description: Una versión de app por banco.
+    columns:
+      - name: version_app_key
+        data_tests: [not_null, unique]
+      - name: banco_key
+        data_tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('dim_banco')
+                field: banco_key
+
+  - name: fct_resena
+    description: Una fila por reseña. Estrella con dim_banco, dim_fecha y dim_version_app.
+    columns:
+      - name: review_id
+        data_tests: [not_null, unique]
+      - name: banco_key
+        data_tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('dim_banco')
+                field: banco_key
+      - name: fecha_key
+        data_tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('dim_fecha')
+                field: fecha_key
+      - name: version_app_key
+        data_tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('dim_version_app')
+                field: version_app_key
+      - name: calificacion
+        data_tests:
+          - accepted_values:
+              arguments:
+                values: [1, 2, 3, 4, 5]
+                quote: false

@@ -1,0 +1,191 @@
+id: ingesta_resenas_google_play
+namespace: pset2
+description: Ingesta incremental de reseñas de Google Play (8 bancos de Ecuador) a Snowflake RAW. La primera ejecución, con la tabla vacía, hace la carga histórica (backfill inicial).
+
+# Cambia este valor por el identificador de tu cuenta: <organizacion>-<cuenta>
+variables:
+  snowflake_account: ORGANIZACION-CUENTA
+
+inputs:
+  - id: max_por_banco
+    type: INT
+    defaults: 3000
+
+tasks:
+  - id: preparar_raw
+    type: io.kestra.plugin.jdbc.snowflake.Queries
+    url: jdbc:snowflake://{{ vars.snowflake_account }}.snowflakecomputing.com
+    username: PSET2_SVC
+    privateKey: "{{ secret('SNOWFLAKE_PRIVATE_KEY') }}"
+    role: PSET2_ROLE
+    warehouse: PSET2_WH
+    database: PSET2_DB
+    sql: |
+      CREATE TABLE IF NOT EXISTS RAW.RESENAS_GOOGLE_PLAY (
+        review_id STRING,
+        banco STRING,
+        app_id STRING,
+        content STRING,
+        score NUMBER,
+        thumbs_up_count NUMBER,
+        review_created_version STRING,
+        app_version STRING,
+        review_at TIMESTAMP_NTZ,
+        reply_content STRING,
+        replied_at TIMESTAMP_NTZ,
+        load_id STRING,
+        extracted_at TIMESTAMP_NTZ
+      );
+      CREATE STAGE IF NOT EXISTS RAW.STG_RESENAS;
+
+  - id: obtener_watermark
+    type: io.kestra.plugin.jdbc.snowflake.Query
+    url: jdbc:snowflake://{{ vars.snowflake_account }}.snowflakecomputing.com
+    username: PSET2_SVC
+    privateKey: "{{ secret('SNOWFLAKE_PRIVATE_KEY') }}"
+    role: PSET2_ROLE
+    warehouse: PSET2_WH
+    database: PSET2_DB
+    sql: |
+      SELECT banco, TO_VARCHAR(MAX(review_at)) AS max_at
+      FROM RAW.RESENAS_GOOGLE_PLAY
+      GROUP BY banco;
+    fetchType: FETCH
+
+  - id: extraer_resenas
+    type: io.kestra.plugin.scripts.python.Script
+    containerImage: python:3.12-slim
+    taskRunner:
+      type: io.kestra.plugin.scripts.runner.docker.Docker
+    beforeCommands:
+      - pip install -q google-play-scraper
+    env:
+      MAX_POR_BANCO: "{{ inputs.max_por_banco }}"
+      LOAD_ID: "{{ execution.id }}"
+      WATERMARKS: "{{ outputs.obtener_watermark.rows | toJson }}"
+    outputFiles:
+      - resenas.ndjson
+    retry:
+      type: exponential
+      interval: PT30S
+      maxInterval: PT5M
+      maxAttempts: 3
+    script: |
+      import json, os
+      from datetime import datetime, timezone
+      from google_play_scraper import reviews, Sort
+
+      BANCOS = {
+          "Banco Pichincha": "com.yellowpepper.pichincha",
+          "Banco Guayaquil": "com.bancodeguayaquil",
+          "Produbanco": "com.produbanco",
+          "Diners Club (blu)": "com.blu.de.diners.club",
+          "Banco del Pacífico": "com.pacifico.pacificid",
+          "Banco Bolivariano": "com.bancobolivariano",
+          "Banco del Austro": "fin.austro.austrodigital",
+          "Cooperativa JEP": "com.jepmovil",
+      }
+      MAX = int(os.environ["MAX_POR_BANCO"])
+      LOAD_ID = os.environ["LOAD_ID"]
+      ahora = datetime.now(timezone.utc).replace(tzinfo=None).isoformat()
+
+      # Última reseña ya cargada por banco (vacío en la primera ejecución)
+      WM = {}
+      for fila in json.loads(os.environ.get("WATERMARKS") or "[]"):
+          fila = {k.upper(): v for k, v in fila.items()}
+          if fila.get("MAX_AT"):
+              WM[fila["BANCO"]] = datetime.fromisoformat(fila["MAX_AT"])
+
+      def descargar(app_id, desde, maximo):
+          salida, token = [], None
+          while len(salida) < maximo:
+              lote, token = reviews(app_id, lang="es", country="ec",
+                                    sort=Sort.NEWEST,
+                                    count=min(200, maximo - len(salida)),
+                                    continuation_token=token)
+              if not lote:
+                  break
+              for r in lote:
+                  if desde and r["at"] < desde:
+                      return salida
+                  salida.append(r)
+          return salida
+
+      with open("resenas.ndjson", "w", encoding="utf-8") as f:
+          for banco, app_id in BANCOS.items():
+              desde = WM.get(banco)
+              resultado = descargar(app_id, desde, MAX)
+              for r in resultado:
+                  fila = {
+                      "review_id": r.get("reviewId"),
+                      "banco": banco,
+                      "app_id": app_id,
+                      "content": r.get("content"),
+                      "score": r.get("score"),
+                      "thumbs_up_count": r.get("thumbsUpCount"),
+                      "review_created_version": r.get("reviewCreatedVersion"),
+                      "app_version": r.get("appVersion"),
+                      "review_at": r["at"].isoformat() if r.get("at") else None,
+                      "reply_content": r.get("replyContent"),
+                      "replied_at": r["repliedAt"].isoformat() if r.get("repliedAt") else None,
+                      "load_id": LOAD_ID,
+                      "extracted_at": ahora,
+                  }
+                  f.write(json.dumps(fila, ensure_ascii=False) + "\n")
+              modo = f"incremental desde {desde}" if desde else "carga histórica"
+              print(f"{banco}: {len(resultado)} reseñas ({modo})")
+
+  - id: subir_a_stage
+    type: io.kestra.plugin.jdbc.snowflake.Upload
+    url: jdbc:snowflake://{{ vars.snowflake_account }}.snowflakecomputing.com
+    username: PSET2_SVC
+    privateKey: "{{ secret('SNOWFLAKE_PRIVATE_KEY') }}"
+    role: PSET2_ROLE
+    warehouse: PSET2_WH
+    database: PSET2_DB
+    from: "{{ outputs.extraer_resenas.outputFiles['resenas.ndjson'] }}"
+    stageName: "@PSET2_DB.RAW.STG_RESENAS"
+    prefix: google_play
+    fileName: "resenas_{{ execution.id }}.ndjson"
+
+  - id: copiar_a_raw
+    type: io.kestra.plugin.jdbc.snowflake.Queries
+    url: jdbc:snowflake://{{ vars.snowflake_account }}.snowflakecomputing.com
+    username: PSET2_SVC
+    privateKey: "{{ secret('SNOWFLAKE_PRIVATE_KEY') }}"
+    role: PSET2_ROLE
+    warehouse: PSET2_WH
+    database: PSET2_DB
+    sql: |
+      COPY INTO RAW.RESENAS_GOOGLE_PLAY
+      FROM @RAW.STG_RESENAS/google_play/
+      PATTERN = '.*{{ execution.id }}.*'
+      FILE_FORMAT = (TYPE = JSON)
+      MATCH_BY_COLUMN_NAME = CASE_INSENSITIVE;
+
+  - id: verificar_carga
+    type: io.kestra.plugin.jdbc.snowflake.Query
+    url: jdbc:snowflake://{{ vars.snowflake_account }}.snowflakecomputing.com
+    username: PSET2_SVC
+    privateKey: "{{ secret('SNOWFLAKE_PRIVATE_KEY') }}"
+    role: PSET2_ROLE
+    warehouse: PSET2_WH
+    database: PSET2_DB
+    sql: |
+      SELECT banco, COUNT(*) AS n, MIN(review_at) AS desde, MAX(review_at) AS hasta
+      FROM RAW.RESENAS_GOOGLE_PLAY
+      GROUP BY banco
+      ORDER BY banco;
+    fetchType: FETCH
+
+errors:
+  - id: registrar_error
+    type: io.kestra.plugin.core.log.Log
+    level: ERROR
+    message: "Falló la ingesta. Ejecución: {{ execution.id }}"
+
+triggers:
+  - id: ejecucion_semanal
+    type: io.kestra.plugin.core.trigger.Schedule
+    cron: "0 6 * * 1"
+    timezone: America/Guayaquil
