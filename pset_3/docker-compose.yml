@@ -1,0 +1,58 @@
+volumes:
+  mlflow-db-data:
+    driver: local
+  mlflow-artifacts:
+    driver: local
+
+services:
+  # Backend store de MLflow: guarda experimentos, corridas, parámetros, métricas y el registro de modelos
+  mlflow-db:
+    image: postgres:17
+    environment:
+      POSTGRES_DB: mlflow
+      POSTGRES_USER: mlflow
+      POSTGRES_PASSWORD: ${MLFLOW_DB_PASSWORD:?Define MLFLOW_DB_PASSWORD en el archivo .env}
+    volumes:
+      - mlflow-db-data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -d mlflow -U mlflow"]
+      interval: 10s
+      timeout: 10s
+      retries: 10
+
+  # Servidor de tracking (UI en http://localhost:5000). Artifact store: volumen mlflow-artifacts
+  mlflow:
+    build: ./docker/mlflow
+    depends_on:
+      mlflow-db:
+        condition: service_healthy
+    ports:
+      - "5000:5000"
+    volumes:
+      - mlflow-artifacts:/mlartifacts
+    command: >
+      mlflow server --host 0.0.0.0 --port 5000
+      --backend-store-uri postgresql+psycopg2://mlflow:${MLFLOW_DB_PASSWORD}@mlflow-db:5432/mlflow
+      --artifacts-destination /mlartifacts --serve-artifacts
+      --allowed-hosts "mlflow:5000,localhost:*,127.0.0.1:*"
+
+  # JupyterLab con todo el entorno (http://localhost:8888). Los notebooks se ejecutan aquí.
+  jupyter:
+    build: ./docker/jupyter
+    depends_on:
+      - mlflow
+    working_dir: /work
+    ports:
+      - "8888:8888"
+    environment:
+      MLFLOW_TRACKING_URI: http://mlflow:5000
+      PYTHONPATH: /work
+      SNOWFLAKE_ACCOUNT: ${SNOWFLAKE_ACCOUNT:?Define SNOWFLAKE_ACCOUNT en el archivo .env}
+      GIT_COMMIT: ${GIT_COMMIT:-no-disponible}
+    volumes:
+      - .:/work
+      - ./secrets:/secrets:ro
+    command: >
+      jupyter lab --ip=0.0.0.0 --port=8888 --no-browser --allow-root
+      --ServerApp.root_dir=/work
+      --IdentityProvider.token=${JUPYTER_TOKEN:?Define JUPYTER_TOKEN en el archivo .env}
