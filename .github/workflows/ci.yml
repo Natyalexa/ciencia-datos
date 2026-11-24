@@ -1,0 +1,70 @@
+# CI del proyecto final: en cada push y pull request instala dependencias, construye la imagen de
+# la API y ejecuta pytest. Sin MLflow ni Snowflake: usa el champion exportado en tests/fixtures/.
+# (GitHub solo lee los flujos de la raíz del repositorio; proyecto_final/.github/workflows/ guarda
+#  una copia idéntica para cumplir la estructura pedida.)
+name: CI
+
+on:
+  push:
+    paths: ["proyecto_final/**", ".github/workflows/**"]
+  pull_request:
+    paths: ["proyecto_final/**", ".github/workflows/**"]
+  workflow_dispatch:
+
+defaults:
+  run:
+    working-directory: proyecto_final
+
+jobs:
+  pruebas:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: |
+            proyecto_final/requirements.txt
+            proyecto_final/api/requirements.txt
+
+      - name: Caché del modelo de embeddings (Hugging Face)
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/huggingface
+          key: hf-paraphrase-multilingual-MiniLM-L12-v2
+
+      - name: Instalar dependencias
+        run: |
+          pip install torch --index-url https://download.pytorch.org/whl/cpu
+          pip install -r api/requirements.txt
+
+      - name: Construir la imagen de la API
+        run: docker build -f api/Dockerfile -t resenas-api:ci .
+
+      - name: Ejecutar pytest
+        run: python -m pytest tests -v --junitxml=reporte-pruebas.xml
+
+      - name: Prueba de humo del contenedor
+        run: |
+          docker run -d --name api -p 8000:8000 \
+            -e MODELO_URI=/app/tests/fixtures/modelo_champion -e REGISTRO_DESTINO=csv \
+            -v "$PWD/tests:/app/tests:ro" resenas-api:ci
+          for i in $(seq 1 40); do curl -fs localhost:8000/salud && break; sleep 3; done
+          curl -fs localhost:8000/salud | grep '"modelo_cargado":true'
+          curl -fs -X POST localhost:8000/predecir -H 'Content-Type: application/json' \
+            -d '{"comentario_limpio":"no me deja ingresar, pesimo","banco":"Banco Pichincha","es_solo_simbolos":0,"version_app_desconocida":0}'
+          test "$(curl -s -o /dev/null -w '%{http_code}' -X POST localhost:8000/predecir -H 'Content-Type: application/json' -d '{"banco":"X"}')" = "422"
+
+      - name: Logs del contenedor (si falla)
+        if: failure()
+        run: docker logs api || true
+
+      - name: Publicar el reporte de pruebas
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: reporte-pruebas
+          path: proyecto_final/reporte-pruebas.xml

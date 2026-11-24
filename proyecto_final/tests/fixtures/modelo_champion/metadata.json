@@ -1,0 +1,14 @@
+{
+  "nombre": "resenas-bancos-ec-modelo",
+  "version": "1",
+  "alias": "champion",
+  "run_id": "972c63a668334b73a195ce78b0bb44ea",
+  "umbral": 0.21999999999999997,
+  "muestra_ci_pr_auc": 0.9346378179107849,
+  "muestra_ci_costo": 0.16,
+  "n_muestra": 400,
+  "test_pr_auc_registrado": 0.8909965932016845,
+  "obt_origen": "PSET2_DB.OBT.OBT_RESENAS_SNAP_PSET3",
+  "scikit_learn": "1.9.1",
+  "exportado_en": "2026-11-24T17:03:03.986359+00:00"
+}

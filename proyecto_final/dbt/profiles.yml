@@ -1,0 +1,14 @@
+# Sin secretos: la autenticación es por llave privada montada en /secrets (solo lectura).
+pset2:
+  target: dev
+  outputs:
+    dev:
+      type: snowflake
+      account: "{{ env_var('SNOWFLAKE_ACCOUNT') }}"
+      user: PSET2_SVC
+      private_key_path: "{{ env_var('SNOWFLAKE_KEY_PATH', '/secrets/rsa_key.p8') }}"
+      role: PSET2_ROLE
+      warehouse: PSET2_WH
+      database: PSET2_DB
+      schema: BRONZE
+      threads: 4

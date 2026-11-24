@@ -1,0 +1,11 @@
+.git
+.env
+secrets
+**/__pycache__
+**/.ipynb_checkpoints
+.cache
+dbt/target
+dbt/logs
+docs
+notebooks
+tests/fixtures/modelo_champion

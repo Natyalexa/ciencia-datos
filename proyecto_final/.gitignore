@@ -1,0 +1,14 @@
+.env
+secrets/
+*.p8
+*.pem
+.ipynb_checkpoints/
+__pycache__/
+*.pyc
+mlruns/
+.cache/
+dbt/target/
+dbt/logs/
+dbt/dbt_packages/
+.pytest_cache/
+/registro/

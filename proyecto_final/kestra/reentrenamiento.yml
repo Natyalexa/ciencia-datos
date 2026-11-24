@@ -1,0 +1,88 @@
+id: reentrenamiento
+namespace: proyecto_final
+description: |
+  Reentrena con la misma preparación (src/pipeline.py) e hiperparámetros del champion, registra el
+  challenger en MLflow, compara champion y challenger en el lote etiquetado más reciente (que ninguno
+  vio), aplica la regla de promoción y espera la aprobación de una persona.
+  Lo dispara monitoreo (alerta de desempeño en 2 lotes seguidos, o calendario) o una persona a mano.
+  El código se despliega solo (cd.yml); el modelo NO: siempre pasa por esta aprobación.
+
+inputs:
+  - id: lote_disparo
+    type: INT
+  - id: lote_eval
+    type: INT
+    description: Lote etiquetado más reciente; no entra al entrenamiento del challenger
+  - id: motivo
+    type: STRING
+    defaults: manual
+
+tasks:
+  - id: entrenar
+    type: io.kestra.plugin.scripts.shell.Commands
+    containerImage: proyecto-final-ds:latest
+    taskRunner:
+      type: io.kestra.plugin.scripts.runner.docker.Docker
+      pullPolicy: NEVER
+      networkMode: proyecto_final_default
+    timeout: PT1H
+    env:
+      SNOWFLAKE_ACCOUNT: "{{ envs.snowflake_account }}"
+      SNOWFLAKE_PRIVATE_KEY_PEM: "{{ secret('SNOWFLAKE_PRIVATE_KEY') }}"
+      MLFLOW_TRACKING_URI: http://mlflow:5000
+      MOTIVO: "{{ inputs.motivo }}"
+    commands:
+      - python -m src.reentrenar entrenar --lote-disparo {{ inputs.lote_disparo }} --lote-eval {{ inputs.lote_eval }} --motivo "$MOTIVO"
+
+  - id: comparacion
+    type: io.kestra.plugin.core.log.Log
+    message: |
+      Challenger v{{ outputs.entrenar.vars.version_challenger }} vs champion v{{ outputs.entrenar.vars.version_champion }} en el lote {{ inputs.lote_eval }}:
+      {{ outputs.entrenar.vars.comparacion }}
+      Regla de promoción → {{ outputs.entrenar.vars.explicacion }}
+
+  - id: aprobacion
+    type: io.kestra.plugin.core.flow.Pause
+    description: |
+      Revisa la comparación (log de la tarea "comparacion" o MLflow) y decide.
+      Recomendación de la regla: {{ outputs.entrenar.vars.regla_promueve ? 'PROMOVER' : 'NO PROMOVER' }}.
+      Reanuda con aprobar = true para mover el alias champion; con false el champion queda intacto.
+    onResume:
+      - id: aprobar
+        type: BOOL
+        defaults: false
+      - id: motivo
+        type: STRING
+        defaults: sin comentario
+      - id: usuario
+        type: STRING
+        defaults: revisor
+
+  - id: decidir
+    type: io.kestra.plugin.scripts.shell.Commands
+    containerImage: proyecto-final-ds:latest
+    taskRunner:
+      type: io.kestra.plugin.scripts.runner.docker.Docker
+      pullPolicy: NEVER
+      networkMode: proyecto_final_default
+    env:
+      SNOWFLAKE_ACCOUNT: "{{ envs.snowflake_account }}"
+      SNOWFLAKE_PRIVATE_KEY_PEM: "{{ secret('SNOWFLAKE_PRIVATE_KEY') }}"
+      MLFLOW_TRACKING_URI: http://mlflow:5000
+      MOTIVO: "{{ outputs.aprobacion.onResume.motivo }}"
+      USUARIO: "{{ outputs.aprobacion.onResume.usuario }}"
+    commands:
+      - python -m src.reentrenar decidir --id {{ outputs.entrenar.vars.id_reentrenamiento }} --aprobar {{ outputs.aprobacion.onResume.aprobar }} --motivo "$MOTIVO" --usuario "$USUARIO"
+
+  - id: recargar_api
+    type: io.kestra.plugin.core.http.Request
+    description: La API ya revisa el alias cada 30 s; esto solo lo hace inmediato
+    uri: http://api:8000/admin/recargar
+    method: POST
+    headers:
+      X-Token-Admin: "{{ secret('ADMIN_TOKEN') }}"
+    allowFailure: true
+
+  - id: resultado
+    type: io.kestra.plugin.core.log.Log
+    message: "Decisión: {{ outputs.decidir.vars.decision }}. Champion en uso: v{{ outputs.decidir.vars.version_champion }}. API: {{ outputs.recargar_api.body ?? 'sin respuesta' }}"

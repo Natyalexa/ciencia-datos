@@ -1,0 +1,401 @@
+review_id,comentario_limpio,banco,log_n_palabras,n_neg_lexico,es_solo_simbolos,version_app_desconocida,es_negativa
+005eea29-1748-4286-8e0f-74b74752ae93,No puedo hacer trasferencias,Banco Pichincha,1.6094379124341003,1,0,0,1
+01ff0f67-cafd-42f9-8fcc-cb8a50de92b1,exelente gracias,Banco Pichincha,1.0986122886681098,0,0,0,0
+03327e3f-a647-413b-91ab-5796b60cd8a2,buena,Banco Pichincha,0.6931471805599453,0,0,0,0
+03e650b7-5e61-40e3-b8dc-255222ba3f11,execelente,Banco Pichincha,0.6931471805599453,0,0,0,0
+053f01cb-5b20-4a5d-a70c-47aeb2dc3dab,buena,Banco Pichincha,0.6931471805599453,0,0,0,0
+06080efa-ac98-4dbd-8e06-d87093f31bd0,"El mejor banco y el que mejor tiene su app, super excelente la actualización, me encanto",Banco Guayaquil,2.833213344056216,0,0,0,0
+06bc4b5f-c76a-40e1-966b-3666ae606e33,muy buena,Banco Pichincha,1.0986122886681098,0,0,0,0
+06f687ff-775b-4a13-bfde-fcd4a39b0cbb,muy bueno está,Banco Pichincha,1.3862943611198906,0,0,1,0
+0781a803-bb20-4b78-bf91-8aa1980d806d,mala,Banco Pichincha,0.6931471805599453,1,0,0,1
+085a5cca-4450-4960-bd4a-7315390a8fac,vale vrg dos horas para una simple foto,Banco Guayaquil,2.1972245773362196,0,0,0,1
+08e50f61-a9c0-4ef5-8cce-5aa73534ef37,"La. Última actualización es horrible! No se encuentra nada, no se puede hacer transacciones. La cambiaron para mal",Banco Guayaquil,2.9444389791664403,1,0,0,1
+0918de59-d39f-4565-a271-8e9be60e2b70,buenisima,Banco Pichincha,0.6931471805599453,0,0,0,0
+093105f1-9c9e-4fe2-b95d-db3f2eb96c63,excelente,Banco Pichincha,0.6931471805599453,0,0,0,0
+095ca170-61b2-4b14-8c88-04f21e8e042c,no puedo abrir la banca móvil,Banco Pichincha,1.9459101490553132,1,0,0,1
+09ac1b78-6980-48aa-a34c-898397d81c7d,mejor del mundo 😍,Banco Guayaquil,1.6094379124341003,0,0,0,0
+09e6943b-afa9-414e-8997-06f55f73cb1e,se cierran sin ningun motivo no la recomiendo es una perdida de tiempo,Produbanco,2.6390573296152584,0,0,1,1
+0add6936-95e0-48c7-a554-6120dbff91fc,no sirve no puedo abrir mi banca .o lo es incompetencia bancaria,Banco Pichincha,2.5649493574615367,2,0,0,1
+0b7c990e-d101-4b92-8909-420123f87730,"No puedo cerrar su ventana de novedades en una tablet , está no me deja apretar cerrar ni vertical ni horizontalmente",Banco Pichincha,3.091042453358316,2,0,0,1
+0ba2f21f-0581-412f-8444-94c54fd558a1,"Son una porquería de banco, como los detesto.",Banco Pichincha,2.1972245773362196,0,0,0,1
+0bcd9649-1160-45af-9270-054f4a624a13,actualize mi numero de telefono por el k tenia amterior ya no lo tengo por banca virtual pero espero dos horas y kiero entrar a mi banca movil y no puedo entrar por que me sigue saliendo el mismo numero anterior,Banco Pichincha,3.7376696182833684,1,0,0,1
+0c5ee4cf-7b3f-480d-b893-1379bffb0834,Me está saliendo un error de REF: 2426:FBAE:FE5SZM Conexión no confiable detectada por la aplicación que no lo puedo solucionar con nada,Produbanco,3.1354942159291497,1,0,0,1
+0ca2572a-e52f-4d1b-a480-70776dfd2849,No puedo eliminar las demás cuentas,Banco Pichincha,1.9459101490553132,1,0,0,1
+0d389c8b-a4df-437b-8b2d-4bacf923879b,si hay dias de demora sobre todo los fines de semana,Banco Pichincha,2.4849066497880004,1,0,0,0
+0f0d5d89-5f00-4765-8478-11d7e8ee10a7,Gracias a la señorita Isabella asesora de blu por estar pendiente de mi inconveniente y explicar de mejor manera el manejo de la app.,Diners Club (blu),3.2188758248682006,0,0,0,0
+0f11f3e3-779e-4368-b3e9-d0569dc75a1c,Porque hace poco no abría para nada esta banca móvil,Banco Guayaquil,2.3978952727983707,0,0,0,1
+0f3e316d-4c44-4c3f-b47d-80b1f8c1e8b7,"Que terrible interfaz pusieron ahora, por favor vuelvan a cómo estaba antes.",Banco Guayaquil,2.5649493574615367,0,0,0,1
+0f53156d-da2c-4218-9985-b8431ac7de3b,la nueva actualización no sirve. hay muchos problemas y demora en abrir la banca movil,Banco Guayaquil,2.772588722239781,3,0,0,1
+0feffcb6-e5b7-400a-ba93-27c2913a8c12,"estado todo el día queriendo crear mi cuenta como usuario nuevo pero la aplicación se traba y no me deja continuar con la validación de mi identidad atravez de una foto. tengo un samsung s26 y no se si sea ese el problema, pero no he podido crear mi cuenta debido a este fallo.",Banco Pichincha,4.007333185232471,2,0,0,1
+1006cbd8-f1fc-45b5-b1f8-9ade24fbc010,No me da prestamos ni targeta crédito,Banco Guayaquil,2.0794415416798357,0,0,0,0
+1074baa4-4772-4ac4-a3d9-6469314725a5,Super buena,Banco Guayaquil,1.0986122886681098,0,0,0,0
+10ea2358-8492-4793-868d-bf8795113044,La acaban de fregar con es actualizacion no carga uno no puede hacer nada horrible arreglen eso en ves de mejorar empeoraron,Banco Guayaquil,3.1354942159291497,4,0,0,1
+10f19218-a3ff-4184-9fe9-256b3120da43,"Pésimo servicio. Cambié de celular, pero olvide mi contraseña, al querer recuperar y hacer todos los pasos requeridos me manda avisos de error en lo servidores, que lo intente después de un min, luego me bloquean y ya estos 4 días sin acceder a mi dinero ni comprobar transferencias",Banco Pichincha,3.912023005428146,3,0,0,1
+1141eb02-4dd0-42ad-be77-c5ea4bf4f761,suscripción,Banco Pichincha,0.6931471805599453,0,0,0,1
+124d5adb-5bcc-4c70-92e0-c8133b8f1a2f,excelente,Banco Pichincha,0.6931471805599453,0,0,0,0
+14ec26f9-b11c-4951-93cc-2d48c456ad99,bacan,Banco Guayaquil,0.6931471805599453,0,0,0,0
+1548df37-3b66-425a-b317-a3924c0892e4,"falla mucho, no se pueden hacer transferencias",Banco Pichincha,2.0794415416798357,1,0,0,1
+157ad9a3-482a-4890-93f4-068565395590,exelente,Diners Club (blu),0.6931471805599453,0,0,0,0
+163ce0e3-de71-4b9e-a5b9-f7c82d66aca3,muy buena experiencia,Banco Pichincha,1.3862943611198906,0,0,0,0
+16c2c494-126b-4a2d-a190-662dca44de79,buena app,Banco del Austro,1.0986122886681098,0,0,0,0
+16ddfc1d-fdb3-4a88-a2ef-b709e04c5f3b,excelente servicio del banco de el Pichincha,Banco Pichincha,2.0794415416798357,0,0,0,0
+17b76e4b-654d-4522-8fe8-74b7d5651df0,Tiene fallas y no se puede transferir desde banca virtual.,Banco Pichincha,2.3978952727983707,1,0,0,1
+185c4fef-586b-4d53-aafd-da6de8a39d86,excelente,Banco Pichincha,0.6931471805599453,0,0,0,0
+18872c8c-c598-43d1-b1a1-6f8da9d8c0f2,No sé qué hicieron o que hacen siempre para que justo cuando se necesite no funcione,Banco Pichincha,2.833213344056216,0,0,0,1
+189eac9b-d08e-4463-a825-43b866376733,"En el término de transferencias en el monto de una transacción mal realizada se debería el soporte y ayuda para la respectiva devolución, caso que me sucedio a mi y el banco hizo de oídos sordos y ojos ciegos",Banco Pichincha,3.6888794541139363,0,0,0,1
+1912f14a-2e63-4ea8-a36a-e7e887435529,"No me deja ingresar a la app, me sale que mi dispositivo esta ""Rooteado"".",Banco Guayaquil,2.70805020110221,1,0,0,1
+197048d9-8b9d-477e-80f3-eb70d57b9c7d,súper bien,Banco Guayaquil,1.0986122886681098,0,0,0,0
+19987c0d-adb3-4430-8432-b1a5ceae82d8,muy satisfecho de su trabajo,Banco Pichincha,1.791759469228055,0,0,0,0
+19a81fa4-9d9c-498b-af36-d686b2b80921,buena aplicación,Banco Pichincha,1.0986122886681098,0,0,0,0
+19af2578-4098-4313-9216-46f8d2b34a15,desde que se actualizo a la última versión no puedo acceder a la app me sale root. y mi teléfono no es usuario root ni tampoco tengo el modo desarrollar activado.,Banco Guayaquil,3.4657359027997265,1,0,1,1
+1a47e317-5f11-405c-9aea-5c058bcd252a,Buena aplicación,Banco Guayaquil,1.0986122886681098,0,0,0,0
+1ac5b8b6-f3d3-453f-8f45-5ea03b8f88f2,"Dos meses sin recibir una actualización de la app y soy de los pocos usuarios que aún no se le actualiza a la nueva versión, que deficiente está siendo el despliegue escalonado, si harán un cambio grande háganlo de una vez, no tiene sentido crear expectativas si juegan con los tiempos de forma tan grosera.",Banco Guayaquil,4.02535169073515,1,0,0,1
+1ae92560-a858-4e9e-b917-979253753e7c,buenas atenciones,Banco Pichincha,1.0986122886681098,0,0,0,0
+1c32e460-d3dd-4308-9db0-b18bc79ac90e,intento verificar mis datos biométricos y no me reconoce. Pido ayuda y no me dan solución,Diners Club (blu),2.833213344056216,0,0,0,1
+1cc40c8a-138b-4e52-8a96-42409d9b7908,muy rápido,Banco Pichincha,1.0986122886681098,0,0,0,0
+1d5c0671-d659-4ddd-a64c-b7824d6e19c6,es buena,Banco Pichincha,1.0986122886681098,0,0,0,0
+1dbbf5d3-2f84-4174-b755-b55780e0ee6c,muy bueno,Banco Pichincha,1.0986122886681098,0,0,0,0
+1fb2aafe-3375-4145-af76-c79455a6bc47,Excelente,Banco Pichincha,0.6931471805599453,0,0,0,0
+217a425e-4f6f-4b8c-bb5f-8e53efe6710a,excelente banca móvil justo y necesario felicidades,Banco Guayaquil,2.0794415416798357,0,0,1,0
+21b02252-d7fb-4c14-9f83-2d11a989b914,Ecxelente muy buen servicio,Banco Pichincha,1.6094379124341003,0,0,0,0
+224c067f-2a60-4881-bd1d-0a3ff602d3f1,siempre fallando esta mrd,Diners Club (blu),1.6094379124341003,1,0,0,1
+224eed25-5117-461c-9818-9517a8acca13,"En esta última actualización, tiene varios fallos que no permiten realizar transacciones, tales como, pagos de servicios, vista y pagos de créditos, vista de tarjetas, etc. Como es posible que una actualización para ""mejorar"" resulte lo contrario y lo peor de todo es que quede cargando indefinidamente cuando uno accede a estos servicios y se queda en blanco la pantalla.",Banco Pichincha,4.110873864173311,2,0,0,1
+2252cf05-545e-449f-9c5d-dbda57e97393,actualice la app ahora no puedo transferir ni retirar sin tarjeta ni hacer pagos por favor como puedo hacer para que funcione de nuevo o cuando van arreglar está falla,Banco Pichincha,3.4339872044851463,2,0,0,0
+22962613-188b-46ad-a02d-30861975ce34,pésimo banco y también en aplicación pero para robar son bueno HDP ratas,Banco Pichincha,2.6390573296152584,1,0,0,1
+2372f523-5928-4dd1-95f3-cbef73652121,Terrible,Banco Pichincha,0.6931471805599453,0,0,0,1
+241b8184-fcc8-4a5b-adfe-f8504f101be7,Excelente.,Banco Pichincha,0.6931471805599453,0,0,0,0
+244f9d53-98a0-4f43-8a6a-4e07ddeb0b2b,fatal no pasa de la camara,Banco Pichincha,1.9459101490553132,0,0,0,1
+24aba357-4463-4324-9454-d657b2c20098,mas de un año intentando aperturar una cuenta y siempre hay problemas nunca hay sistema y en linea imposible abrirla demasiado tiempo perdido intentando abrir la cuenta,Banco Pichincha,3.332204510175204,1,0,0,1
+250ec1d9-2831-4304-9596-5e0b0061fd44,Mala en actualización es un desastre,Banco Guayaquil,1.9459101490553132,1,0,0,1
+25ae88cd-353a-4fe4-b586-189895f9f7b5,pésima la actualización no permite hacer nada.,Banco Pichincha,2.0794415416798357,2,0,0,1
+2673ceaa-8299-4f68-bede-f775a0fb24f6,me robaron 100 dólares h p t s,Banco Pichincha,2.1972245773362196,0,0,0,1
+2723e661-005b-4425-a41b-27d888704de2,buena aplicación,Banco Guayaquil,1.0986122886681098,0,0,0,0
+28223bcc-c39d-4e57-ac70-9b19be59cc37,"está versión Seve muy pésima, en vez de mejorarla la empeoran.",Banco Guayaquil,2.4849066497880004,2,0,0,0
+2862b427-06c8-44d0-8bd3-43a7b659d822,"No me permite hacer transferencias ni pagos por de una, no se por que ponen esas opciones si no va a funcionar.",Diners Club (blu),3.1354942159291497,0,0,0,1
+291c105e-b846-473e-8bad-03b3e315ad78,se inteligente,Produbanco,1.0986122886681098,0,0,1,0
+29b2aab2-df17-45e8-9fce-94f90b947e9c,muy práctica,Banco Pichincha,1.0986122886681098,0,0,0,0
+2a486288-ce75-415c-9b24-02eed73c834f,quiero activar la aplicación para poder ver mi estado de cuenta y no puedo por me piden el número del móvil para poder q me manden el codigo pero como yo estoy afuera del país en España y no puedo recibirlo y por favor quiero q me manden el estado de mi cuenta ami correo para poderlo ver,Banco Pichincha,4.07753744390572,2,0,0,0
+2aa988ee-ee31-4d37-8dae-3020e3353547,excelente usabilidad de la app,Banco Pichincha,1.791759469228055,0,0,0,0
+2b4fb30c-73ed-446e-84c1-481d73857d78,excelente servicio,Banco Pichincha,1.0986122886681098,0,0,0,0
+2be82e7d-3f02-4db2-b1f0-d1e76f9f04de,me dejaron de llegar las notificaciones de transferencia lo cual eran muy importantes para mí día a día,Banco Pichincha,2.9444389791664403,0,0,0,1
+2c37381d-e45f-476f-8cfc-7997c0ba7894,no pueden ni deberian obligar a poner pin o seguridad en el celular para poder tener la aplicación ojala cambien eso porque nunca ha sido así y ahora no puedo abrir la aplicación,Diners Club (blu),3.5263605246161616,1,0,0,1
+2d1f4923-5c45-4779-a208-7bba85429211,"uno cambia su opinión porque ustedes se lo buscan, el soporte es mediocre te roban y te tratan como si fuera tu culpa. Si tienes la oportunidad de cambiarte de banco apenas puedas hazlo, este banco es muy abusivo, no recomiendo en ninguna de sus variantes, por cierto cuando llamas por un requerimiento importante te mandan con un agente robot, es triste busquen otro banco apenas tengan la oportunidad.",Banco Pichincha,4.248495242049359,0,0,0,1
+2d5b50b1-49fc-4e7e-9859-349657e4576e,No se abre la aplicación desde hace 2 días no se puede revisar nada,Cooperativa JEP,2.70805020110221,0,0,0,1
+2d8cebb1-6f55-41c3-bda9-3a9c4da4103a,lento,Banco Pichincha,0.6931471805599453,1,0,0,1
+2e12a909-59d1-417c-8b69-04698b6631c7,hoy 30 de Noviembre del 2026 no funciona,Banco Guayaquil,2.1972245773362196,1,0,0,1
+2e7c04b8-9ce6-44f7-a9fd-6a351032b392,aplicación rápida y amigable,Diners Club (blu),1.6094379124341003,0,0,0,0
+2f87b57b-e984-47f0-ae91-005bc373cfc2,no se realizo la transferencia con esta transacción soperas el monto límite diario configurando en tu cuenta ??????,Banco Pichincha,2.9444389791664403,0,0,0,0
+31686926-a417-4b66-89d3-f97a6e5320c6,deben poner la opción para hacer una solicitud de reclamo.. y contestar las llamadas al coll center,Banco Pichincha,2.8903717578961645,1,0,0,1
+318b062c-ee9b-4339-be5f-1413efd35000,fue genial este proceso,Diners Club (blu),1.6094379124341003,0,0,0,0
+318db030-8989-431e-945d-8ee7aba6a056,"Tenían una buena aplicación hasta que la actualizaron, pésima decisión para adultos mayores que estaban familiarizados con la anterior versión",Banco Guayaquil,3.044522437723423,1,0,1,1
+31ac2ff0-62dc-419b-91b5-0833d70222e6,todo bien,Banco Guayaquil,1.0986122886681098,0,0,0,1
+32cefed0-1366-4fd2-8f32-1b9f1263b475,muy buena,Banco Pichincha,1.0986122886681098,0,0,0,0
+33837ab1-9303-463b-b282-3d5897ac74f5,"su interfaz hoy 25 de oct 2026 esta del asco, sumamente hostil hacia el usuario",Banco Guayaquil,2.772588722239781,0,0,1,1
+338d4233-1764-47e5-b50f-8ffa86b509a7,"es buena, pero mantiene la banca muy caída lo que genera colapso y bloqueo automático en la cuenta, reporta por correo y casi nunca responden y el WhatsApp es un bots que no te comunicas bien.",Banco Guayaquil,3.6109179126442243,1,0,0,1
+33c818d5-b16c-49c0-a969-aef0b224b3d8,5 extrellas por es lindo poder transferir a otro país si boy de viaje se puede pagar des el teléfono,Banco Pichincha,3.044522437723423,0,0,0,0
+340bea47-5ef8-4663-a308-fa3742718c8a,la app banco del pichincha es lo máximo me facilita mi trabajo ne ahorra tiempo en mis actividades les recomiendo instalar.,Banco Pichincha,3.091042453358316,0,0,0,0
+34a0101d-b830-4341-b365-d5906a3524ca,por q me pide q actualice la app cada rato,Banco Pichincha,2.3978952727983707,0,0,0,0
+353c6496-4c80-44f9-ba1e-e1c12f306724,excelente aplicación banca móvil pichincha la recomiendo 100%,Banco Pichincha,2.1972245773362196,0,0,0,0
+35c995ea-de34-48e4-88e1-f5352e55e80d,Lleva como tres días q la aplicación está fallando x ejemplos no funciona varias opciones entre ellas pagar servicios.,Banco Pichincha,2.995732273553991,2,0,0,0
+3672e1b3-e2f8-4602-886b-5a10743ad270,"me atrase en mí tarjeta de crédito dos días y me pusieron como si me atrase dos meses, me dañaron mi historial crediticio. fui a equifax y me dijeron q es legal lo que hacen. es injusto eso lleve las fechas de corte y que pague para demostrar que nunca me atrase dos meses y me dijo quien me atendió fue q saque un certificado q tiene un costo de $20,80 y lleve ese certificado lo entregue a banco Pichincha para q corrija pero es mucho dinero que se paga. cómo es posible que hagan daño así",Banco Pichincha,4.584967478670572,0,0,1,1
+3688723f-6177-4a01-93a8-92d4b5a7ce6e,a cada rato se cae la webada,Banco Pichincha,2.0794415416798357,1,0,1,1
+36e83119-fdbf-4056-9de9-7a8cc76300c4,"no puedo abrir la parte de pago de servicios me sale en blanco la pantalla mi celular es un S25 Ultra, me podrían ayudar con esto por favor tampoco me permite pagar tarjetas",Banco Pichincha,3.5263605246161616,1,0,0,1
+38494d4d-fd37-4fe7-8cf6-c69397791c4b,excelente,Banco Guayaquil,0.6931471805599453,0,0,0,0
+39c281ba-5287-44ca-a04d-880e07b69774,malo,Banco Pichincha,0.6931471805599453,1,0,0,1
+39dd707b-f463-4d01-a5d0-ad4589cd3636,"Llevan varios días que cuando entró a la app me sale que se está actualizando, luego de eso al momento de querer poner la opción de número registro para el retiro sin tarjeta se bloquea la pantalla y no me deja ni retroceder, debo salir y copiar el número para poder digitar manualmente y al momento de realizar la confirmación me sale que no lo tengo registrado, cuando si lo tengo, en fin... Pendiente a eso porfis",Banco Pichincha,4.356708826689592,2,0,0,0
+39e58fc1-b21d-43af-97ee-dfe8ec76ab73,"Es muy buena la aplicación solo me gustaría que haya la opción de transferir a alguien sin la necesidad de que se quede guardado el contacto en mi app, ya que en algunas ocasiones he tenido que hacerle una transferencia a alguien que nunca mas vi pero se quedó registrado el contacto. Otras bancas te preguntan al final si deseas agregar el contacto, considero que debe ser igual en esta app",Produbanco,4.276666119016055,0,0,0,0
+3c312848-fae2-4044-ae3b-5619969e1281,lento,Banco Pichincha,0.6931471805599453,1,0,0,1
+40391371-1172-44ff-820a-38ad9ccbc6f2,Qué sucede con la banca móvil que no funciona?,Banco Guayaquil,2.302585092994046,1,0,0,0
+41cf682d-7b45-4d1a-8dcf-745dadb3693b,"Muy buena app, pero tengo dudas de por qué en mi celular con Android 16 se instaló la versión 9.99.47 y no la versión 10. Actualizo la tienda y da como última versión pero en otro celular con Android 14 sí está la versión 10 que se supone que es la última. De ahí todo muy bien con la app.",Banco Guayaquil,4.110873864173311,0,0,0,0
+4401adc1-b9c7-49be-bbde-a0c6b5edc221,10vien atendido,Banco Pichincha,1.0986122886681098,0,0,0,0
+45344aa8-30aa-463c-97b8-e4091ae09d83,No se puede realizar avances,Banco Bolivariano,1.791759469228055,0,0,0,1
+4637e4ef-8e16-4f45-a791-9a451f06563e,mala experiencia,Banco del Pacífico,1.0986122886681098,1,0,0,1
+4652f8d9-9c60-4f31-863e-063f7be248fc,Excelente,Banco Pichincha,0.6931471805599453,0,0,0,0
+4654ee32-9740-4e5e-8acc-fce530f77321,no me abre la banca móvil,Banco Pichincha,1.9459101490553132,0,0,0,1
+46f3ad05-f813-4588-b4b5-67f61311b3fd,"La aplicación meses está bien, meses está todo mal, he tenido problemas los últimos días, la aplicación se hace una transferencia y al finalizar se sale, toca volver a entrar de nuevo, ahora anda lenta y estoy dentro de la aplicación y se cierra, eso me pasó unas 4 veces q mejor deja ahí. Arreglen por favor q eso es importante hoy en dia",Produbanco,4.174387269895637,2,0,0,0
+48eb40fa-5ff2-4656-95ad-cad01c110d80,"Con la última actualización tanto banca Guayaquil como Peigo no funcionan porque supuestamente el dispositivo esta rooteado, mi dispositivo es Honor Mágic 7 Lite con android 16",Banco Guayaquil,3.332204510175204,1,0,0,1
+49ee0728-dd74-4154-93a7-a2067d6e9a76,cuando coloco el pin no me deja ingresar me regresa,Banco Pichincha,2.3978952727983707,1,0,0,1
+4a77a96a-6727-4c75-ac28-73aef42c46e0,Excelntes,Banco Guayaquil,0.6931471805599453,0,0,0,0
+4a783617-f4f7-4cfa-bf1f-be342ccadfd1,la aplicación es demasiado lenta deben mejorar la fluidez y optimizar los tiempos de búsqueda y también las notificaciones de las transacciónes llegan muy a destiempo,Banco Pichincha,3.295836866004329,0,0,0,1
+4bac6ca2-c011-480a-81f7-4b3e09079645,exelente,Banco Guayaquil,0.6931471805599453,0,0,0,0
+4baef50b-a2bc-4b54-96f2-99056eb824a3,El mejor Banco del Ecuador sin duda alguna,Banco Pichincha,2.1972245773362196,0,0,0,0
+4bb0f907-701f-4b8e-a7c5-fa5944ad08c5,buena aplicación,Diners Club (blu),1.0986122886681098,0,0,0,0
+4bb71f2c-0180-449c-8e02-c8786c1e8e8a,"no vale la opción de SOLICITUD para generar una tarjeta de debito,se queda en blanco y no puedo solicitarla!! mejoren eso por favor !! pésima app...!",Banco Pichincha,3.295836866004329,3,0,0,1
+4cef135d-548c-483a-a7df-3e38a6cc59d2,ya voy haciendo dos transferencias a banco Pichincha y me sale que al otro día se hace efectivo cuando llega la hora se me regresa el dinero.🙄,Banco Guayaquil,3.332204510175204,0,0,0,1
+4d0fe3d7-e0e9-451c-a0a1-3b379f0f53ea,siempre dando un pésimo servicio todos los días actualizando y lo peor q se demora en actualizar 😡😡,Banco Pichincha,2.9444389791664403,3,0,0,1
+4d849ea1-8361-41fa-9a65-21c711325012,"no sé que hicieron pero ni siquiera me deja entrar en la app, ya lo desinstale y lo instale de nuevo, está en la última versión pero ni siquiera puedo entrar es una desgracia, dañaron la app.... que pésimo servicio?.",Produbanco,3.713572066704308,1,0,0,1
+4efb396d-4163-4465-a144-8d7b2248aa29,"es una basura. llevo más de un mes sin que me solucionen el inconveniente de ingreso de sesión. un mes en el que no he podido transferir ni pagar desde el Produbanco, apenas pueda recuperar mi acceso voy a dejar esta basura de banco. Ya le contactaron desde todos los medios y nunca me pudieron ayudar",Produbanco,4.04305126783455,3,0,0,1
+4f47c9a1-61d6-467a-9936-c1e2f679b8d1,No permiten el ingreso segun q ay muchos usuarios ingresando,Banco Guayaquil,2.3978952727983707,1,0,1,1
+4f83e8e5-0b71-4bdd-86dd-1ca7ed85470d,horrible,Banco Pichincha,0.6931471805599453,1,0,1,1
+4fa5193d-ab73-4a47-ab46-f0ff534a5482,pésimo no deja ingresar,Banco Guayaquil,1.6094379124341003,1,0,0,1
+4fb6f2f6-8174-411a-a2a3-c9f7fef473d8,muy buena,Banco Guayaquil,1.0986122886681098,0,0,0,0
+4fbb6645-225c-4747-97b9-a7c15a5d0043,horrible,Banco Guayaquil,0.6931471805599453,1,0,0,1
+506be172-6614-45db-b33c-ac777c4082cf,excelente app,Banco Guayaquil,1.0986122886681098,0,0,0,0
+5071244e-ce26-4955-8865-095a1f09dcfe,ci,Banco Guayaquil,0.6931471805599453,0,0,0,0
+50fa49d2-ad0a-42a8-bde9-45ea28f9d8c5,De la mejor app bancaria a la peor.,Banco Guayaquil,2.1972245773362196,1,0,0,1
+51be05dd-9a5b-4cea-b98b-4f682c985efd,Excelente Aplicación,Banco Pichincha,1.0986122886681098,0,0,0,0
+5211f245-a0dd-42dd-96b5-c953af621eb5,En cada actualización la aplicación se trabaja o se lagea o nisiquiera me deja iniciar sesión,Banco Pichincha,2.833213344056216,0,0,1,1
+52f3dec2-25c3-4c0d-891d-9336dc20f1b9,Excelente,Banco Guayaquil,0.6931471805599453,0,0,0,0
+53a60e02-8068-4b60-8980-76d689392d52,no me dan un crédito,Banco Pichincha,1.791759469228055,0,0,0,0
+547f9854-4158-4390-bf56-8b6871a33d34,"problemas para iniciar sesión, se abre la app y empieza una barra de carga de ""nueva actualización"" pero al llegar al final sale descarga fallida y así en un bucle eterno, tengo un Xiaomi 12",Banco Pichincha,3.58351893845611,1,0,0,1
+549ad47d-5ef9-4a69-b2d8-72a73042e2f1,"Es una deficiencia del Banco Pichincha que las transacciones no se registren el mismo día y hora en que han sido realizadas, particularmente en los fines de semana, y se reporten como realizadas el lunes siguiente. Esto nos impide hacer un adecuado seguimiento de las transacciones efectuadas en nuestras cuentas. También es una limitación que en algunos casos (T. interbancarias, pero también T. internas) no se reporten datos de las cuentas desde donde se hicieron las transferencias.",Banco Pichincha,4.356708826689592,0,0,0,0
+54d193a9-2f24-4fa5-a34a-614e525cf7a0,es un fastidio que no cargue cada vez que es día de pago,Banco Bolivariano,2.6390573296152584,0,0,0,1
+55bcb603-ef65-4ab0-aa8e-9c08d236e229,excelente el servicio..me gusta..,Banco Pichincha,1.6094379124341003,0,0,0,0
+55e9741f-65c1-47c0-8f3a-64f2294c2736,no estoy de aceuerda que tiene que llegar un Código si perdí ese numero,Banco Pichincha,2.70805020110221,0,0,0,1
+57396031-e428-49d0-9c3a-99287d4bfd79,"pesimo, pide actualizaciones y no se descarga, se queda en la descarga",Banco Pichincha,2.5649493574615367,1,0,0,1
+578037e6-4d35-44af-ab7e-68625c7c089d,"le doy 5 estrella por qué me encanta la facilidad que tiene para hacer todo pagos transferencia todo, lo único es que aún no recibo el nuevo diseño de la App 🥲",Banco Guayaquil,3.4965075614664802,0,0,0,0
+57c4ea04-753c-4d25-8ce5-5cd7e3e5af81,horrible,Banco Guayaquil,0.6931471805599453,1,0,0,1
+58eafcae-e27e-4028-b4c2-af3dff6add2e,"pésimo , ni crear una cuenta pude por que el número de cédula no lo acepta da error ..",Cooperativa JEP,2.995732273553991,2,0,1,1
+59dde377-f290-4991-a4be-6b593779abaf,la última actualización no permite realizar transacciones,Banco Pichincha,2.0794415416798357,1,0,0,1
+5a38b4c3-7f3a-4cd0-b3ae-b02b590d946b,No me deja ingresar,Banco Pichincha,1.6094379124341003,1,0,0,1
+5af5778a-8ce9-4506-b9e4-49b64a54dc30,no permite abrir cuenta en linea,Banco Pichincha,1.9459101490553132,1,0,1,1
+5d3944a6-b23f-4be1-88e2-1a8e360fc960,malo,Banco Pichincha,0.6931471805599453,1,0,0,1
+5e9f8913-d066-4423-8224-1c5948b49741,se cae demasiado,Banco Pichincha,1.3862943611198906,1,0,0,1
+5eca65ef-714f-4d08-9ae0-b4643b2135c1,muy buena,Banco Guayaquil,1.0986122886681098,0,0,0,0
+5ed27748-e3d5-4120-b01c-63a1865a95b6,😀😀,Banco Pichincha,0.6931471805599453,0,1,0,0
+5f6fbd1f-0f72-4157-9e3a-49fdd88d1032,ojos hkmpo,Banco Guayaquil,1.0986122886681098,0,0,0,1
+5fadbb8c-d9f3-46d3-b200-3796e524a5f4,la peor actualización que tienen,Banco Guayaquil,1.791759469228055,1,0,0,1
+61726344-09dc-476b-a1ad-b2b65d2b6c9e,Buena,Banco Guayaquil,0.6931471805599453,0,0,0,0
+618aa54f-702b-42b9-93fb-3adfc79a315d,"no me permite usar el de una, pagar la tarjeta de transporte, se queda cargando en dónde dice confirmar transacción y no funciona....",Banco Pichincha,3.1780538303479458,1,0,0,1
+620403d9-ebbf-46d6-bea1-5424805f1ea8,"Si, pero no puedo actualizar mis datos",Banco Pichincha,2.0794415416798357,1,0,0,0
+62892ca9-64f0-490b-a3ea-e0673c034d73,mi experiencia en la aplicación ha sido placentera,Banco Pichincha,2.1972245773362196,0,0,0,0
+63ff3c80-fc1c-4a52-bd69-0d9bd5599b7f,Muy buena aplicacion. Felicitaciones.,Banco Pichincha,1.6094379124341003,0,0,1,0
+64021ed5-a0c3-4172-94b3-871552f129c6,La aplicación no sirve para nada desde la última actualización. Se intenta ingresar y a la hora de verificar con la cámara que eres tú se queda colapsada y no funciona. Deberían de arreglar los fallos o haberla dejado como antes.,Banco Pichincha,3.7376696182833684,2,0,0,1
+650e6089-ed8f-4a73-8d7e-379d7bfd0a5d,Muy buena,Banco Pichincha,1.0986122886681098,0,0,0,0
+664eb509-92dd-4957-9eca-0544d56d984d,Buena la atención,Banco Pichincha,1.3862943611198906,0,0,1,0
+66da76a7-6bff-4308-909c-5bdbab5ffd9a,se coloca el usuario y contraseña y al tratar de ingresar se devuelve a la pantalla de login,Banco Pichincha,2.9444389791664403,0,0,0,1
+67a4c3cf-25b1-453a-ab70-b7fe1637edcd,ok,Banco Pichincha,0.6931471805599453,0,0,0,0
+683a7bc2-fdb3-4ee5-a84f-6f055e8aea78,buena,Banco Pichincha,0.6931471805599453,0,0,0,0
+6880384e-cf57-4ae6-be11-e4c267321a12,súper,Banco Pichincha,0.6931471805599453,0,0,0,0
+6984f7ac-3524-4d77-af22-a19e2cf5985b,Mucho mejor,Banco Pichincha,1.0986122886681098,0,0,0,0
+6a5eccbb-b660-4c36-b7f0-be6f6f09075f,"pésima aplicación, siempre se cae o no funciona",Banco Pichincha,2.1972245773362196,3,0,0,1
+6a9e1e7c-4f73-4d9b-9b30-6cc47cffa669,No se puede abrir cuenta desde la app hasta me bloquearon por varios intentos no sirve!,Banco Pichincha,2.833213344056216,2,0,0,1
+6b05b91f-3035-48ad-968f-6a3f0f67b857,no carga la app salen errores de html no hace las transacciones que se solicita. cada cierre sale error al cargar.,Banco Guayaquil,3.091042453358316,3,0,0,1
+6b2d8dfe-6244-412f-a405-ea1d519e91fa,bueno,Banco Guayaquil,0.6931471805599453,0,0,0,0
+6b4e3857-617d-4fdc-bbfc-0dc56a010f36,Bien,Banco Guayaquil,0.6931471805599453,0,0,0,0
+6b99c52b-3931-4cab-95d7-fd4693f4596f,"la última actualización está fatal, no me deja hacer nada más que mover dinero entre mis cuentas y pagar con el De Una. Si quiero revisar mis tarjetas de crédito o cualquier otra información adicional, la aplicación me salta un mensaje de error",Banco Pichincha,3.784189633918261,2,0,0,1
+6bf4b645-079a-4996-9c10-01839a4426e9,me está fallando no puedo ingresar,Banco Pichincha,1.9459101490553132,2,0,0,1
+6cf5a964-5d11-4437-b380-17155a00140c,No funciona más de 4 horas le daría 0 estrellas,Banco Guayaquil,2.3978952727983707,1,0,0,1
+6d823e72-1975-4d24-98f4-24a62026e288,bueno,Banco Guayaquil,0.6931471805599453,0,0,0,1
+6dac806f-013a-4298-a06b-0eb37f1cd979,"Buenas, tengo problemas para ingresar a la app",Banco Guayaquil,2.1972245773362196,1,0,0,1
+6e22f9f5-0fc1-48d6-8950-479a0bce79a7,Banca móvil ha sido de mucha utilidad para mis transacciones,Banco Pichincha,2.3978952727983707,0,0,0,0
+6f10c310-4c0c-4136-a1b2-978ee1555b76,porque le doy 2 por que nose porque no me sale en la pantalla de inicio si esta instalado,Banco Pichincha,2.995732273553991,0,0,0,1
+6f513fc2-034e-4bda-bdbe-bc142f680ea7,"Soy nueva y mala experiencia todo hiba bien , hasta llegar al paso 5 de hay nada se pudo hacer.",Banco Pichincha,3.044522437723423,1,0,1,1
+6f7a8952-e5af-4cc7-ae21-79ef04caa362,"terrible experiencia de usuario.. nada intuitiva,inestable",Diners Club (blu),1.9459101490553132,0,0,0,1
+7087d104-0885-45d9-9235-9f9421ace25e,sin novedad,Produbanco,1.0986122886681098,0,0,0,1
+70d0a6c3-da4c-431b-af26-b68b77b44826,vale verga,Banco Pichincha,1.0986122886681098,0,0,0,1
+71425dca-97b7-4621-a187-5dd18435f002,la nueva banca del futuro🏦🪙,Banco Pichincha,1.791759469228055,0,0,0,0
+71718305-520f-4c6e-833e-30e652069859,Excelente lo único q me falta es la tarjeta de crédito,Banco Guayaquil,2.4849066497880004,0,0,0,0
+72822792-ccab-40ce-95e5-c2ad8f253237,"ya no puedo ver el análisis de mis gastos en la tarjeta, es más ya no sale la tarjeta en el widget",Banco Guayaquil,3.1354942159291497,1,0,0,0
+72f5c84c-fe63-4a87-9cd1-f71d5b90fa9f,Muy eficiente su atención. felicidades..,Diners Club (blu),1.791759469228055,0,0,0,0
+733044ce-e330-4a0a-a07e-1f187927934c,"desde la actualización no me deja entrar, pongo la contraseña y me sale error, es una molestia no poder sacar la plata cuando se la necesita",Banco Guayaquil,3.295836866004329,2,0,1,1
+7498216b-68f3-47ef-a802-b3eacab20518,"Me encanta Diners Club ahora con los pagos de una por medio de la app me ayudado full a realizar pagos me han facilitado la vida, son los mejores no cambien por favor y espero sea mucho mejor de lo q ya son ahora!!! 👍🏻😍",Diners Club (blu),3.828641396489095,0,0,0,0
+74f148fb-6877-4f74-94a8-50eaddfa4fb8,excelente,Diners Club (blu),0.6931471805599453,0,0,1,0
+776af12b-5d63-4a49-9eff-833ecb01d69a,"no vale el escáner facial, llevo tres semanas intentando entrar y nada",Banco Guayaquil,2.5649493574615367,0,0,1,1
+780f81fa-795d-48ae-ba8d-7667d28990cf,Buena app,Banco Guayaquil,1.0986122886681098,0,0,0,0
+782a44c6-d9b9-401e-95d5-c9e30296f14c,excelente 👌,Banco Guayaquil,1.0986122886681098,0,0,0,0
+787cf388-ef40-4f01-8d17-3680e521c332,excelente servicio estoy muy satisfecha con la banca móvil desde mi teléfono 😊😊😊😊😊,Banco Pichincha,2.6390573296152584,0,0,0,0
+78eafb47-26d4-462d-ad3e-75e879cb118e,Es una app muy buena para ver los datos de mi tarjeta sin sacarla del bolsillo,Diners Club (blu),2.833213344056216,0,0,0,0
+7be868de-6381-4d6f-8194-8d2b4d465def,"la banca se cambió sola, no me aceptaba ningún dato o información, no podía transferir de ninguna forma.",Banco Guayaquil,2.9444389791664403,0,0,0,1
+7c07262a-f91b-47af-9085-7cdcfdd2154e,Tengo algunos día que quiero ingresar y la balidacion biometrica no funciona,Banco Guayaquil,2.5649493574615367,1,0,0,1
+7c6eecc4-c6ac-46f6-9df9-0d0989414dd7,buena,Banco Pichincha,0.6931471805599453,0,0,0,0
+7ce140d1-8b69-4559-82ac-321dc060a273,Buenas,Banco Guayaquil,0.6931471805599453,0,0,0,0
+7cf233b5-5844-4446-b805-8ee4965f8a03,Excelente gracias,Banco Pichincha,1.0986122886681098,0,0,0,0
+7e52110c-4188-4ca8-b6cf-aa1ce3f6d144,buena aplicacion,Diners Club (blu),1.0986122886681098,0,0,0,0
+7eb17c28-058e-4bc7-baf2-b28650f30b9b,no me deja ingresar a la banca móvil porque necesito desvincular mi otro dispositivo y lo peor que es el mismo teléfono necesito ayuda,Banco Pichincha,3.2188758248682006,2,0,0,1
+7ef0ba94-9fd5-423b-9681-8f3959697d45,bueno,Banco Guayaquil,0.6931471805599453,0,0,0,0
+8038c60a-5bd0-47e7-962a-aacc65a1b0a5,no puedo ingresar a mi cuenta,Banco Pichincha,1.9459101490553132,1,0,0,1
+8087bfc2-16e7-4e3b-9c28-9576e68150a6,pesima,Banco Guayaquil,0.6931471805599453,1,0,0,1
+80e46714-c345-42e6-9840-6e43ee54b7c1,"era una aplicación muy buena, muy accesible y todo se podía hacer todo con lector de pantalla. pero desde la última actualización se han pasado la accesibilidad, ahora al momento de querer hacer una transferencia no es capaz de anunciarme a la persona que le voy a hacer dicha transferencia, lo que me obliga a pedir la ayuda a terceras personas _ lo que reduce mi autonomía digital",Banco Pichincha,4.23410650459726,0,0,0,1
+81f0741d-fd4f-4b75-af57-0c5401a5a23e,todo el tiempo pide actualizar y da un pésimo servicio 🤬,Banco Pichincha,2.4849066497880004,1,0,0,1
+823839b7-8ac5-4b27-9945-43a8baae0391,pésimo no se puede desbloquear cuentas,Banco Pichincha,1.9459101490553132,2,0,0,1
+82adcc3e-6b7c-463f-9759-8106751b7e22,es el mejor Banco te prestan ayuda y te facilita subir tu scor crediticio,Produbanco,2.70805020110221,0,0,1,0
+82f313f4-83ac-4453-86f6-0bf335ab86fe,me descuentan dinero,Banco Pichincha,1.3862943611198906,0,0,0,1
+8308e59b-79b4-480f-a153-93066c4de328,"no puedo actualizarla, no me sale la actualización",Banco Guayaquil,2.1972245773362196,1,0,0,1
+832fa5dd-f490-4318-a6e6-c3a7c305b86c,no puedo ingresar ni con huella ni biométrica no se q hacer,Banco Guayaquil,2.5649493574615367,1,0,0,1
+84bc30d4-476a-47b7-879d-0e6846a11c48,he intentado abrir la cuenta y sale que no hay servicio,Banco Pichincha,2.4849066497880004,0,0,0,1
+84d506f0-3dd8-4195-8a0a-0b2e50388032,"Pesima aplicación, quería crear mi cuenta pero en todas las veces que intente me salía al final de todo ""error al validar"" ingresé mis datos correctamente así que no entiendo por qué sale eso",Banco Pichincha,3.5553480614894135,2,0,0,1
+85dccd9b-0f68-4d99-b366-feb72817eb1d,excelente,Banco Guayaquil,0.6931471805599453,0,0,0,0
+85ef6d09-0165-4942-a178-1f35671f05a2,se queda en el 2do paso validación de foto o rostro,Banco Pichincha,2.4849066497880004,0,0,0,1
+8727eea3-1724-4372-9a6c-1e2189931099,"No funciona se cuelga, se queda la pantalla en blanco, hay que intentar 10 veces y con suerte funciona",Produbanco,2.995732273553991,2,0,0,1
+87c24487-71a2-4929-969e-ed59283f9434,Rapido en transferencias,Banco Pichincha,1.3862943611198906,0,0,0,1
+883bfbf4-b459-4ae3-bbec-8ecfb268ab7c,siempre está mal,Banco Pichincha,1.3862943611198906,0,0,0,1
+887cc024-de7d-48b1-bd6b-0bf4291499bd,Exitoso,Diners Club (blu),0.6931471805599453,0,0,0,0
+89a3dabb-95be-404f-8b10-116dc6935c8c,genial,Banco Guayaquil,0.6931471805599453,0,0,0,0
+89cc3b54-7abb-4aa5-95e1-63179cfbd7d5,mala atención al cliente,Banco Pichincha,1.6094379124341003,1,0,0,1
+8a81f480-93a9-44f4-9642-3ee6ec04c6a5,"simplemente no sirve, te bota de sesión a pesar de tener todo actualizado no se compara con BE que nunca me dió ningún problema.",Produbanco,3.2188758248682006,2,0,0,1
+8a8c0469-9882-495c-801b-5bf71c38f2b2,Muy buena,Banco Pichincha,1.0986122886681098,0,0,0,0
+8ab4666c-5767-4285-b8fe-379e02a6cb17,no sirve ingreso usurio y pin y se queda congelado es una aplicacion pesima .,Banco Pichincha,2.772588722239781,2,0,0,1
+8aec569c-fa88-40b3-8c33-fb88401012a2,genial,Banco Pichincha,0.6931471805599453,0,0,0,0
+8b977bbd-7eb9-42e6-a1df-ad994deea5f1,Para mi es una aplicación excelente,Banco Pichincha,1.9459101490553132,0,0,0,0
+8cdac8ff-1f1f-43e6-8fd9-8c98faaaf6c5,"Excelente, gracias",Banco Guayaquil,1.0986122886681098,0,0,0,0
+8dba8caf-2f88-4889-aa82-8208550c2bbe,"App horrible, intento iniciar sesión y no me deja, el sistema me manda un código y no me abre una ventana para colocar simplemente horrible, prácticamente tengo mi usuario congelado porqué no puedo iniciar sesión, nefasto.",Banco Pichincha,3.6109179126442243,4,0,0,1
+8e31f630-9780-4eea-b968-4a81f9eb737e,"pésimo servicio, está nueva actualización no permite que pueda ingresar a mi perfil aunque ponga bien mi usuario y clave no me deja, revisen bien si van hacer sus actualizaciones",Banco Pichincha,3.4339872044851463,3,0,0,1
+8f4ac85d-ce76-4982-a1c3-b98bf4c90d9d,muy mala aplicación en comparación con la de otros bancos que se tiene,Banco Guayaquil,2.6390573296152584,1,0,0,1
+8f5b21fb-89c9-4f31-a786-c668529d59da,"Instalé la última actualización y ahora cada que llega una notificación en vez de abrir la aplicación, me abre la tienda de play store de verdad es muy molesto",Banco Pichincha,3.4011973816621555,0,0,0,1
+8f789441-1329-4c91-a5ee-9f59ecaacac1,muy buena aplicacion,Banco Guayaquil,1.3862943611198906,0,0,0,0
+8fc59c8f-0192-47cd-9e05-e588f98f711e,exelente,Banco Pichincha,0.6931471805599453,0,0,0,0
+90d94cac-04cb-42a8-a5b7-463f6a36b57e,bien,Banco Pichincha,0.6931471805599453,0,0,1,0
+90f0fb12-caba-4ee6-bee8-6999006480aa,"No me deja crearme una cuenta, me aparece número de cédula inválido pésimo servicio",Produbanco,2.70805020110221,2,0,0,1
+912eb38c-2665-445a-82e4-fb1e713513f8,dan dinero a cnt sin mi autorización por eso cambie de banco,Banco Pichincha,2.5649493574615367,0,0,0,1
+924e2129-a17c-4f10-9886-7512d863afa7,Básica,Banco Pichincha,0.6931471805599453,0,0,0,0
+92b7c18a-3091-40c0-b115-56a6a4cf508f,muchos pasos y siempre piden que se intente más tarde,Banco Pichincha,2.3978952727983707,0,0,0,1
+936d7b3e-4ddb-4911-90a5-3874aa4e0545,me permite tomar decisiones personales.,Banco Guayaquil,1.791759469228055,0,0,0,0
+93902e95-0c08-4a5e-ba0a-f7b509fa7b45,Con la nueva actualización solo he tenido más problemas con comprobantes,Banco Guayaquil,2.4849066497880004,1,0,0,1
+94049521-9185-46b3-b8ab-17988a7c6ef5,"para alguien que tienen un negocio , es una pésima aplicación siempre pasa en mantenimiento, por ende se pierden ventas",Banco Pichincha,3.044522437723423,1,0,0,1
+967dcbe4-8720-4d8d-8599-82041befc575,"Al momento de querer pagar servicios, la página se queda en blanco, lo mismo pasa al querer pagar las tarjetas, a veces salen guardadas, a veces ya no, es una ruleta rusa, presenta error en reiteradas ocasiones, el servicio debería ser óptimo, están manejando dinero y prestaciones de servicios que deberían estar disponibles en cualquier ocasión por x eventualidad de sus clientes.",Banco Pichincha,4.143134726391533,1,0,0,1
+97a508fb-f1d6-4dc0-9eab-853330a7b7be,muy buena,Banco Pichincha,1.0986122886681098,0,0,0,0
+97fb7b42-7e2f-426f-823d-6a8dccffd0f7,con la última actualización no se puede utilizar los botones de navegación para las personas adultas mayores por favor corregir ese defecto gracias,Banco Pichincha,3.1780538303479458,0,0,0,1
+9812478d-e8c9-4ee0-bc0c-362b5441b164,bueno,Banco Guayaquil,0.6931471805599453,0,0,0,0
+98306e21-5fac-4eee-bc65-0f421abf95f2,"con esta última actualización, la dañaron",Banco Pichincha,1.9459101490553132,0,0,0,1
+99ae86c8-6b56-45f6-adc0-b50e95257233,"arreglen su porquería. ojalá pudiera contactar con los dichosos canales de soporte pero por WhatsApp piden datos sospechosos, y por teléfono me contesta una máquina que no tiene idea de nada y no comprende lo que solicito",Banco Pichincha,3.6375861597263857,1,0,0,1
+9a0a123b-c0c8-448a-bf99-70b3f60ff44e,no funciona,Banco Guayaquil,1.0986122886681098,1,0,0,1
+9aeee285-7d47-402c-ae35-55fb72a6d1b5,el reconocimiento facial es pésimo si demora una eternidad o simplemente te envía a intenta e intentar de nuevo,Banco Guayaquil,2.995732273553991,2,0,0,1
+9b423e57-d531-46f9-b636-d56ad752cf12,"Desde su reciente actualización es un desastre, se cambian los iconos, busco mis contactos en la barra de búsqueda y no aparecen... Caos total",Banco Guayaquil,3.2188758248682006,0,0,0,0
+9bdcd225-91ec-44fa-8d2b-1ac33023bd65,genial,Banco Pichincha,0.6931471805599453,0,0,0,0
+9c0e8d47-3955-4d5e-b0ec-e20e529dfbdc,excelente servicio,Banco Guayaquil,1.0986122886681098,0,0,0,0
+9c355aa5-1471-47b2-b0a1-fe001c838a50,electricidad 1 año,Banco Pichincha,1.3862943611198906,0,0,0,0
+9d579412-25dc-4d96-9a49-7bd93421922f,Muy contenta de tener la aplicación me ayuda mucho,Banco Pichincha,2.302585092994046,0,0,1,0
+9d73dbd4-892f-4626-8f24-3aff83213d06,excelente,Banco Guayaquil,0.6931471805599453,0,0,0,0
+9dac5776-26ed-41de-ba99-c29e25556abd,pésima funcionalidad,Banco Pichincha,1.0986122886681098,1,0,0,1
+9e8f6d5e-0586-4343-96bd-f98988d10530,"Si hubiera la opción de 0 estrella se la diera, pésimo servicio, tengo meses intentando abrir está nueva app y no sirve de nada porque me pide reconocimiento facial y no coge nada y no me permite acceder a nada... No puedo diferir mis consumos, no puedo ver mis consumos, no puedo ver mi cupo actual, nada, no puedo acceder absolutamente a nada, la App anterior era muy buena, podía hacer todos mis procesos sin ningún inconveniente y ahora llevo meses q ni siquiera uso la tarjeta y la voy anular...",Diners Club (blu),4.5217885770490405,6,0,0,1
+9fb00449-1bd1-4088-93e8-d659469fbad0,Increíble que de error al intentar pagar su propia tarjeta. Los pagos no se sincronizan inmediatamente. Si se paga en fin de semana o feriado hay que esperar dos días hábiles a veces,Banco Pichincha,3.5263605246161616,1,0,0,1
+a10c1c66-7f7c-4003-a339-97fe2e958666,"Pésimo, desde hace 3 días que no puedo ingresar",Banco Pichincha,2.302585092994046,2,0,0,1
+a14e6d9f-18b4-4a0e-af4d-d07fe2b40f1f,muy buena,Banco Pichincha,1.0986122886681098,0,0,1,0
+a27a02c1-0f4a-4022-8775-6f91ea23a8c0,"la última actualización pésima, no puedo pagar tarjetas ni servicios, dañaron la app en vez de arreglarla",Banco Pichincha,2.8903717578961645,2,0,0,1
+a2ae0ddd-dad5-445b-bd28-8dc447bb8daf,no me deja hacer transferencias cada vez peor. considerando cambiarme de banco.,Banco Pichincha,2.5649493574615367,2,0,0,1
+a436382a-447b-4c28-bc49-58e531e5a398,la descargue pero no quiere abrir,Banco Pichincha,1.9459101490553132,0,0,0,0
+a49eefc6-c77d-46f6-b612-882bb64e4837,muy buena,Banco Pichincha,1.0986122886681098,0,0,0,0
+a4c3be6c-e169-4b82-a067-1df761c1aeb7,Exelente banco me gusta mucho protege mis ahorros como es debido 😅😄,Banco Guayaquil,2.5649493574615367,0,0,0,0
+a4e3b345-35b6-4187-bbf5-d687a6d5b5ba,muy bien!,Diners Club (blu),1.0986122886681098,0,0,0,0
+a571a181-a3e4-4dce-ae67-d3b1a75e78d7,aún no me llega la actualización de la app y veo que ya algunos familiares la tienen,Banco Guayaquil,2.8903717578961645,0,0,0,1
+a605e098-d620-4d78-9523-f9f1db45054b,uno puede entrar cuantas veces quieras y no te cobran,Banco Pichincha,2.3978952727983707,1,0,0,0
+a83344c4-3bc5-46b3-aae4-759c82f29cd2,llevo mas de 2 meses con la app de la cooperativa que no quiere abrir y simpre me arroja un error de colectividad cuando todas las demas apps móviles de bancas móviles funcionan perfectamente conectadas a la misma red,Cooperativa JEP,3.6888794541139363,1,0,0,1
+a8a6d74c-5c7a-4960-9e20-d5ba77f24b73,"de un momento a otro se bloqueo, luego que el banco la desbloqueara ya no puedo ingresar directamente, si o si tengo que poner el usuario y la contraseña, me pide que acepte para ingresar biométricamente pero nada sigue así",Cooperativa JEP,3.713572066704308,3,0,0,1
+a90bc3dd-f02b-486d-97e5-b1567e62fdf7,"llevo varios dias sin poder usar la app, sale que hay problemas con la app, es de desarrollo",Produbanco,2.9444389791664403,1,0,0,1
+a9a73699-4330-4cf5-a125-59eef80a46e8,es muy lenta la aplicación NO SE ABRE RAPIDO .....,Banco Pichincha,2.3978952727983707,0,0,0,0
+aac2bd89-c1ca-47c6-86c2-025b549abd51,Se cuelga y no funciona,Diners Club (blu),1.791759469228055,2,0,0,1
+ab0fb13e-fd85-45ca-9441-9b01407b23db,se atribuyen dinero que no son de ustedes,Banco Pichincha,2.1972245773362196,0,0,0,1
+abd3421c-4cf0-4b24-8359-9c553cc84f71,Nose por qué al momento de crear la cuenta pone tantas trabas q si error en el sistema q si bloqueo no deberían bloquear nada que seguridad ni q seguridad poreso son datos de uno mismo y poreso quiere uno crear su cuenta y esperar tantas horas me parece innecesario cuando es problema mismo de la app!!!!,Banco Pichincha,4.060443010546419,4,0,0,1
+ac76736b-8b9e-4f18-98e8-6885d398065a,Muy eficiente,Banco Pichincha,1.0986122886681098,0,0,0,0
+ac893ca4-75a5-4678-a61a-47265fc9bdda,bien,Banco Pichincha,0.6931471805599453,0,0,0,1
+ad3bc304-559b-4370-ab21-5998ec0bf014,me parece muy buena la app puedo ver todos los gastos q hago y lo q ingreso en mi cuenta le 10/10🤝,Banco Guayaquil,3.1354942159291497,0,0,0,0
+adc3340f-20ec-4add-83c3-6375d22e0356,"ESTÁ PÉSIMA LA BANCA, FALLA MUCHO. MÁS DE LO NORMAL. NO SE LA PUEDE USAR CON NORMALIDAD. HE TENIDO QUE CAMBIARME A OTROS BANCOS PARA PODER REALIZAR MIS TRANSACCIONES.",Banco Pichincha,3.4011973816621555,2,0,0,1
+adf8f3e3-d9d8-459b-9903-5f9ee563adc4,que aplicación para más estresadora no funciona correctamente y siempre está fallando,Banco Pichincha,2.5649493574615367,2,0,0,1
+ae96f7e8-7b56-41ab-b727-8f14eb428c4c,últimamente hay contactos a los que no puedo transferir a los cuales siempre he transferido,Banco Pichincha,2.772588722239781,1,0,0,0
+af4f43b0-63df-43e9-a639-6d6f5b61684c,exelente y confiable,Banco Pichincha,1.3862943611198906,0,0,0,0
+af7eb7da-3ccf-4b34-ac4c-e36478b99be8,muy buena aplicación,Banco Pichincha,1.3862943611198906,0,0,0,0
+af9cb6fa-1c56-4577-9747-64686277c65b,muy bueno esta aplicación 👍 les recomiendo,Banco Pichincha,2.0794415416798357,0,0,0,0
+b06c77b1-0554-4d0c-9ae4-d17e1a19e5d1,genial está,Banco Guayaquil,1.0986122886681098,0,0,0,0
+b0a9d4e2-f7d6-4f94-915c-61aa28993dfc,No me permite transferir.,Banco Pichincha,1.6094379124341003,0,0,0,1
+b282d8ac-d217-49cf-89e1-91d40c6f01f5,"No me deja ver mis metas, sale error",Banco Guayaquil,2.1972245773362196,2,0,0,1
+b2fa40d5-f7c1-4bfa-ab2b-d58ad004b74f,antes me dirigía directamente a la app y ahora se abre el navegador para mandarme a play store 😑,Banco Pichincha,2.995732273553991,0,0,0,1
+b38bcd81-9223-4094-8e06-f6c5644f20a2,vacam,Banco Pichincha,0.6931471805599453,0,0,0,0
+b3ba506b-b6cb-420d-a2c5-acebbf5f22be,excelente,Banco Pichincha,0.6931471805599453,0,0,0,0
+b4d3890f-fcc9-4452-b89f-b9c19eda69b7,Terrible esas actualizaciones..,Banco Pichincha,1.3862943611198906,0,0,0,1
+b5430990-d531-4cd0-9927-23bbf34f3fae,"El cambio con la anterior aplicacion ha sido muy bueno, permite ver transacciones y gestionar temas de manera mas visual",Diners Club (blu),3.044522437723423,0,0,1,0
+b63fb8e4-0d54-47bd-a501-009c177510f5,alguien sabe cómo se hace una transferencia en la nueva actualización?,Banco Guayaquil,2.4849066497880004,0,0,0,1
+b6b37d00-1d2f-4a97-bc8f-bc6171857eba,"Excelente aplicación, buen soporte técnico y claro.",Diners Club (blu),2.0794415416798357,0,0,0,0
+b82008cf-0e8c-4ad6-97a7-93c7b00cad38,estoy a gusto con este banco,Banco Pichincha,1.9459101490553132,0,0,0,0
+b9786438-025c-448e-93b0-22e5de4ceec5,no sé porq la banca móvil no se puede abrir,Banco Bolivariano,2.3978952727983707,0,0,0,0
+b97f86d4-606c-45d1-80f3-c30884437b8e,muy buena aplicación,Banco Guayaquil,1.3862943611198906,0,0,0,0
+ba1f79b7-95c8-4ec0-bc0e-d0eac4560a15,buenas noches al emprendedor no lo ayudan,Banco Pichincha,2.0794415416798357,0,0,0,1
+bd607ab2-e38c-493c-abc7-4d4f616ee6bd,"cuando mas la necesitas sale con ""estamos experimentando un alto volumen de usuarios"" y no te da acceso. se siente como un robo",Banco Guayaquil,3.1780538303479458,0,0,0,1
+becc327d-12bb-465f-929d-2f575a2a6e8b,muy bueno,Banco Pichincha,1.0986122886681098,0,0,0,0
+c11056cd-43a1-48f8-acb0-4c53a554445d,pongo mi usuario y después sale que eh cambiado mi huella y se cierra cosa así que pésimo servicio ni mi huella me agarra,Banco Pichincha,3.2188758248682006,1,0,0,1
+c176e3bf-25b0-438d-b393-ca4773e91d41,bien,Banco Pichincha,0.6931471805599453,0,0,1,0
+c25c06bc-d359-4db4-a853-bbc0edf48ba3,"Desde la actualización disque para mejorarla, súper lenta, las transferencias ahora a otros bancos no se hacen efectivas inmediatamente COMO ANTES SÍ SE HACÍAN, se cierra a cada rato, se cuelga, ninguna mejora. TERRIBLE",Banco Guayaquil,3.5553480614894135,1,0,0,1
+c261ed4a-50c7-48ad-93fe-e1500e5f9b59,se callo la página no quiere abrir la aplicación x favor arreglen ese problema,Banco Guayaquil,2.70805020110221,2,0,1,1
+c2aef80a-5f42-4e54-991d-141bc7a9158c,PESIMA APLICACIÓN NO VALE ABRIR LA BANCA MOVIL EN ALGUNOS DISPOSITIVOS QUE ASCO DE SERVICIO QUE ASCO DE BANCO MEJOR DEBERIAN CERRARLO,Banco Pichincha,3.1354942159291497,1,0,0,1
+c3e24a80-8fa8-4413-968c-3863f05cf0e0,Es una porquería esta app se cae a cada rato..!!,Banco Pichincha,2.3978952727983707,1,0,0,1
+c41f2e47-f115-4edf-9f34-326d175da812,q vaina q ya una semana tratando d hacer transferencia y la banca se cae o se queda en blanco no se como quieren brindar un buen servicio si cada actualización es peor q la anterior,Banco Pichincha,3.6109179126442243,2,0,0,1
+c4216448-03a2-4709-8559-86e1a075986e,muy buena,Banco Pichincha,1.0986122886681098,0,0,0,0
+c45c62de-ea89-43cb-91e2-0eb5319846fa,muy mala la actualización antes era mejor,Banco Guayaquil,2.0794415416798357,1,0,0,1
+c501e09b-ec9e-43eb-a497-324762def349,excelente,Banco Guayaquil,0.6931471805599453,0,0,1,0
+c5064193-c528-456b-9646-a6ef8323b0f8,"Se me bloqueó la banca móvil, me decía que la clave está incorrecta , pero si estaba poniendo bien, y empecé a seguir los pasos para abrir otra vez y no se abria. Desinstale la banca por si tenga que actualizar , pero m sale que la versión no es compatible, pero si estaba utilizando normalmente antes que se bloquee.",Banco Pichincha,4.110873864173311,2,0,1,1
+c54051d8-5f0c-4c9d-863e-a223f7462c72,excelente,Banco Guayaquil,0.6931471805599453,0,0,0,0
+c54b334d-2ec7-472b-9b54-3135d8b719f6,"soy usuario nuevo y la app está muy ,lo único malo es que no se puede ahorrar,me refiero a lo que la app del banco de Guayaquil tiene lo que es la cuenta principal y de ahí ahí otra opción que es y se llama Meta osea como que guarda el dinero en otra cuenta y de hace ganar intereses,la app del banco tiene la opción en cuenta flexible pero al que rer pasar el dinero a cuenta flexible para así ganas interés y más que ganar intereses para que el dinero no se mezcle cuando te depositen no sirve",Banco Pichincha,4.61512051684126,2,0,0,1
+c6d3f830-dbe0-4188-ba96-db1d713d9d4b,la mejor app,Banco Guayaquil,1.3862943611198906,0,0,0,0
+c715019e-e450-49bf-a258-7ddc928985eb,excelente servicios,Banco Guayaquil,1.0986122886681098,0,0,0,0
+c7d964c5-3bf7-4a60-b008-af2c255380eb,No me sale nada,Banco Pichincha,1.6094379124341003,0,0,0,1
+c85977e6-224c-451f-bd89-d822f3e48644,se bloquea está app y luego no se puede desbloquear ni llamando al banco te exigen que saques una tarjeta de débito fatal,Banco Pichincha,3.1780538303479458,2,0,0,1
+c8b60983-70f2-4855-8ab5-41c657df52f5,Da asco su app no se pueden ver los momentos de transacciones algo tan básico al día de hoy 2/10 sigo con el problema de no poder ver los movimientos sigue un asco la app,Banco Pichincha,3.58351893845611,1,0,0,1
+c8c9901c-5a2e-48fd-8f69-dd72bca6d983,"Deben rediseñar la interfaz, se ve viejo y obsoleto...",Banco Bolivariano,2.302585092994046,0,0,0,0
+c9000d31-91a9-402e-be4b-6286e098e196,Buena,Banco Guayaquil,0.6931471805599453,0,0,0,0
+cb70b38c-5f1f-41e5-9bef-35238f9d3594,excelente banco,Banco Pichincha,1.0986122886681098,0,0,0,0
+ccbd3732-3d9f-4d80-999b-0d6562985fbc,"horrible aplicación, tras que uno quiere ver los movimientos en esta aplicación se complica demasiado y no se encuentra lo que en be se encontraba fácilmente.",Produbanco,3.295836866004329,1,0,0,1
+cdadead7-8afa-402c-ac12-80e4aa28941b,Excelente Aplicacion de Pichincha Baca Movil,Banco Pichincha,1.9459101490553132,0,0,0,0
+cddf8b7f-6139-49df-9535-57c7de4f5e59,excelente,Banco Pichincha,0.6931471805599453,0,0,0,0
+cdf1298b-79d6-4666-bff3-54c3b1ffdc5e,lo mas máximo,Banco Guayaquil,1.3862943611198906,0,0,0,0
+ce06d32e-2d31-4f19-a66e-b3971c27fe39,Que decepción una vaina de app.. Desde ayer no puedo ingresar a la app.. Que esta pasando 🤯,Banco Guayaquil,2.9444389791664403,1,0,0,1
+cfb361a4-507a-40d8-9ca6-626c52b3e495,basura no funciona nada más que las transferencias,Banco Pichincha,2.1972245773362196,2,0,1,1
+cfb64c0e-2a35-4105-908b-84c416cb64f3,perfecta,Banco Pichincha,0.6931471805599453,0,0,0,0
+d00bbe50-e8f9-4bea-9d09-cba1843ecfb4,malo,Banco Pichincha,0.6931471805599453,1,0,0,1
+d20f8540-1e12-4056-be4c-dbfba5929a48,"Banco Pichincha super top, me ayuda en todo pago e inversión, super recomendada.",Banco Pichincha,2.6390573296152584,0,0,0,0
+d39f398f-5984-4414-9ef0-60fa4b064461,practico ágil rápido,Banco Pichincha,1.3862943611198906,0,0,0,0
+d53ca663-11ae-42a4-8232-43dbdbdde3d6,excelente,Diners Club (blu),0.6931471805599453,0,0,0,0
+d546bb6d-25f2-4d2e-91a0-98e790262614,excelente,Banco Pichincha,0.6931471805599453,0,0,0,0
+d5543d2f-a475-47f3-a099-c2aaf83e3547,"hola, no se por no me dejan ingresar a mi cuenta, quiero abrirlo y me sale solo el inicio...",Banco Pichincha,2.995732273553991,1,0,0,1
+d70884ce-6579-4f48-ad69-fee4a638d3c7,Descargué la actualización y dejaron de funcionar las consultas de tarjetas de crédito. Deberían probar las funcionalidades antes de ponerlas en producción. Que pésimo servicio!,Banco Pichincha,3.258096538021482,1,0,0,1
+d79d4648-d783-4d76-820f-8232bf55f276,buena,Banco Pichincha,0.6931471805599453,0,0,0,0
+d7edd03c-9350-4b01-bdba-73ee236b4590,me sale una publicidad y no puedo cerrarla. no puedo hacer transferencias ya una semana. alguien ayuda,Banco Pichincha,2.8903717578961645,2,0,0,1
+d8f8ed49-7c9f-417d-bee2-4b91594a7eff,muchos anuncios,Banco Pichincha,1.0986122886681098,0,0,0,0
+d96fb242-8b3a-4dc4-95d5-8bbe494f98f2,"la nueva actualización está pésimo. Se demora en ingresar, si es que ingresa. No carga los contactos. No ejecuta las transferencias. Arreglen por favor..!!",Banco Pichincha,3.2188758248682006,4,0,1,1
+d9932595-228b-4d62-9270-32436973c832,No llegan los códigos de verificación,Banco Pichincha,1.9459101490553132,0,0,0,1
+db08d310-deca-417d-b549-833312615b61,Tengo problemas con la app cada vez que intento entrar me manda como tres mensajes con diferentes claves.,Produbanco,2.9444389791664403,1,0,0,1
+dc04e5ac-9b02-4778-8e52-b8fbf634b5fc,excelente servicio,Banco Guayaquil,1.0986122886681098,0,0,0,0
+dcd6f239-08e4-4dc5-877d-a2d3b89ece6a,no coge la validez facial,Banco Guayaquil,1.791759469228055,0,0,0,1
+dd18eae0-7aa3-40c3-a2e1-99b5ce67abfb,buena aplicación,Diners Club (blu),1.0986122886681098,0,0,0,0
+dde8f129-096a-4dbd-967f-79d1da04b48c,"Que extraño que justo en inicios de feriado fin de mes que todos sacan su plata se caiga la app. Ratas es lo que son, retienen el dinero y hacen más plata infelices",Banco Guayaquil,3.5263605246161616,0,0,0,1
+dea73254-2b24-46ae-8339-15996abce14c,me funcionaba bien desde ayer se queda en blanco,Banco Pichincha,2.302585092994046,0,0,1,0
+df18c64c-5f0c-4f65-9867-6a3cf66b0e03,Excelente banco,Banco Guayaquil,1.0986122886681098,0,0,0,0
+df3555d7-301e-49be-869a-a6f00ad350d9,buena,Banco Pichincha,0.6931471805599453,0,0,0,0
+e0e2fa87-50bd-4a41-96a8-381b6f75a33f,buena atencion al cliente,Banco Pichincha,1.6094379124341003,0,0,0,0
+e1dd9183-924f-4a98-b7a8-1112a8c248a0,Porquería de actualización... Ya llevan 2 días con errores y no pueden solucionar su aplicación... Mejoren el servicio,Banco Guayaquil,2.9444389791664403,2,0,0,1
+e3f4ddd4-b58f-4340-a3ea-ff5de7c945c2,Antes estaba mejor con la nueva actualización ni siquiera entra a la cuenta,Banco Guayaquil,2.6390573296152584,0,0,1,1
+e43c2e41-6245-4f7d-91bf-d073a0f8a000,lo unico falta especificar los pagos e interes gracias,Banco Pichincha,2.302585092994046,0,0,0,0
+e4828ca2-6700-4de6-87aa-aecb91f52378,espectacular experiencia nos facilita todo,Banco Pichincha,1.791759469228055,0,0,0,0
+e5122d20-33dc-43f1-bdad-9beeb599b3d2,la app funciona muy bien un 10/10 por mi parte,Banco Guayaquil,2.3978952727983707,0,0,0,0
+e5ac0166-1bb9-4f61-8a53-e60cb5d14f92,buena i fácil de usar,Banco Pichincha,1.791759469228055,0,0,0,0
+e69fa61f-9b02-49b0-9703-f34f1a890787,Es buena,Banco Pichincha,1.0986122886681098,0,0,1,0
+e80448b7-2f8d-44e9-b115-fdcb35c79d0b,muy buena,Banco Pichincha,1.0986122886681098,0,0,0,0
+e8383445-18ae-4e60-bf4c-30ba1bb1c500,nada amigable,Diners Club (blu),1.0986122886681098,0,0,0,1
+e92b6925-c100-4e33-ae31-b2426f6ae281,bien,Banco Pichincha,0.6931471805599453,0,0,0,0
+e95c832e-06b4-408f-99bd-e968fb813410,"HORRIBLE, se bugea, no me deja entrar a los servicios de mi tarjeta de crédito. PÉSIMO.",Produbanco,2.833213344056216,3,0,0,1
+e9b2858d-27b4-44c2-859d-aa43ef342d5d,dicen que es mi tarjeta va a dejar de funcionar mañana y quiero ir a la función de solicitar tarjeta y solo me da una pantalla blanca,Banco Pichincha,3.332204510175204,0,0,0,0
+eb3942d3-5fb6-4eac-902f-b12a52664e30,no me deja crear una cuenta,Banco Pichincha,1.9459101490553132,1,0,0,1
+eb66d5b0-a4cc-466a-aa2d-c09608e6d359,De fácil uso,Banco Pichincha,1.3862943611198906,0,0,0,0
+ebd3fdb0-3469-4271-82b0-619c9398fa9a,excelente aplicación,Banco Pichincha,1.0986122886681098,0,0,1,0
+ede148b0-7f1c-4ab4-bc8a-6bf5c4b994bb,cómo descargo banca móvil ayúdame por favor 🙏,Banco Guayaquil,2.1972245773362196,0,0,0,0
+ee2992d1-e009-461a-9038-310bdd455d7b,muy buena,Banco Guayaquil,1.0986122886681098,0,0,0,0
+ef51bdfd-96c9-40b0-9530-2dba0e28c286,"Pésima está banca, cada rato actualizaciones, demoras en pago, en transferencia, hacer un trámite en la banca un mrd se demora o se congela.",Banco Pichincha,3.2188758248682006,3,0,0,1
+ef716642-da21-4654-a634-146356e2b4a8,"Pésimo servicio, no puedo entrar a mi cuenta siempre que intento me dice bienvenido y luego vuelve a la parte inicial. Ya intente de muchas formas y hace lo mismo.",Banco Pichincha,3.4339872044851463,2,0,0,1
+f031dcf8-8148-4c83-a70f-f0ff93792133,no funciona bn,Banco Guayaquil,1.3862943611198906,1,0,0,1
+f03ffbde-5252-45d2-9600-101f84789fb6,"4 estrellas x ahora. xq me gusta. Soy nuevo cliente diners y me gusta que permita pagar con ""deuna"" a conocidos amigos y gente que tiene negocios o despensas y emprende, ojalá no quiten ese beneficio xq sino 👎dislike, tbn me gusta la cuenta de ahorros uff es genial sigan así ojala asi siga. tbn me gusta las fechas de corte. Mejoren un poquito más y les 5 estrellas y no hagan cambios sin beneficios xq eso les baja el gusto. Dios les bendiga.",Diners Club (blu),4.442651256490317,1,0,1,0
+f040f027-ff8a-4d9b-aaef-affb29026f02,good,Banco Guayaquil,0.6931471805599453,0,0,0,0
+f14cda4f-1a8e-4e14-af83-13ef5177d3e3,excelente servicio,Banco Guayaquil,1.0986122886681098,0,0,0,0
+f15c0869-d22d-4d62-a8d4-a4276e98260e,Excelente,Banco Pichincha,0.6931471805599453,0,0,0,0
+f27c4d41-b50f-4da2-b686-fb430112c3fd,Genial,Banco Pichincha,0.6931471805599453,0,0,0,0
+f2b38d9b-e944-42f9-a8ea-d3d7303a1b87,es súper eficiente esta aplicación.,Banco Pichincha,1.791759469228055,0,0,0,0
+f2d9ed14-ca84-4424-b6b1-42dfc3353417,Es una buena aplicación,Diners Club (blu),1.6094379124341003,0,0,0,0
+f33fb14c-7d50-4a90-a792-c88636c114ef,Lllevo más de 72 horas y el banco no me da solución ya que no puedo acceder a la banca en donde ya cuento con una cuenta. no sé comunican pese a que tengo un ticket,Banco Pichincha,3.6109179126442243,1,0,0,1
+f3a9ba14-dc8d-41ba-986b-b42476d1dfb3,no me quiere abrir la app banco Pichincha,Banco Pichincha,2.1972245773362196,0,0,0,0
+f418200a-1fff-4837-a4b4-e25553124ce9,Pésima actualización en todo momento solo me sale error de conexión o se cuelga la aplicación y se cierra sola aunque tenga excelente Internet la aplicación no sirve,Banco Guayaquil,3.367295829986474,4,0,0,1
+f4909bee-4606-41ea-afe3-90308b7a9208,excelente,Banco Pichincha,0.6931471805599453,0,0,0,0
+f4db1641-af58-4b04-a4a2-fcca70c7f2f7,"Por esta nueva actualización ya ni acceder a mi cuenta puedo, pido solución lo antes posible",Banco Guayaquil,2.833213344056216,0,0,0,1
+f5769ff6-0550-4206-9e10-b8a52b6ab31a,excelente,Banco Pichincha,0.6931471805599453,0,0,0,0
+f592077d-1ab9-44cd-9e65-532584b80d5d,excelente servicio,Diners Club (blu),1.0986122886681098,0,0,0,0
+f810052b-cabe-4252-acd6-a63787a528d3,"No deja realizar el pago de servicios, se queda en blanco",Banco Pichincha,2.4849066497880004,0,0,0,1
+f8d2e1ef-e7e7-40d4-a4b6-52d4236cc4c4,LO MAXIMO,Banco Guayaquil,1.0986122886681098,0,0,1,0
+f90c41a9-7acc-452a-bf8f-933f5e596794,muy buena,Banco Pichincha,1.0986122886681098,0,0,0,0
+f97775d3-ef41-46c7-a217-e1702fdafb47,buenas,Banco Pichincha,0.6931471805599453,0,0,0,0
+fa38c574-bb3b-4aa3-804f-36e242dbf7a9,bueno,Banco Pichincha,0.6931471805599453,0,0,0,0
+fa9fc760-a73a-4189-ac77-77d061694776,bueno,Banco Guayaquil,0.6931471805599453,0,0,0,0
+fb926a70-949f-456e-8a0e-48fa52e746d2,"pésima aplicación no te reconoce el rostro, es una pérdida de tiempo",Diners Club (blu),2.5649493574615367,1,0,0,1
+fc04c94b-7287-478c-ab25-e2f8bd6656be,Con la última actualización no me deja pagar servicios o ver las notificaciones no vale para nada más estrictamente que transferir dinero esto me está estresando por qué yo siempre uso la Banca para recargar mi Cuenta Ciudad y no me permite,Banco Pichincha,3.7612001156935624,1,0,0,1
+fc93b774-b231-468d-95e2-2241452b971d,es buena,Banco del Pacífico,1.0986122886681098,0,0,0,0
+fd0a7894-4e13-404d-a1d7-70eaec4ba206,"Pésima actualización, no me permite gestionar mi TC cuando ingreso al apartado de tarjeta aparece a los pocos segundos un mensaje ""ocurrió un error en el servicio""",Banco Pichincha,3.332204510175204,2,0,0,1
+fd1c7f0c-3754-42e7-b31b-cf9b6c339bb4,"para eso cambiaron la anterior app, esta horrible el diseño y lo peor que no funciona,",Banco Guayaquil,2.833213344056216,3,0,0,1
+fd348a9c-3ee1-4de8-b9da-acb70e8d814e,excelente,Banco Pichincha,0.6931471805599453,0,0,0,0
+fe63be09-0aa1-4765-baf9-ae2d6857e946,muy buena,Banco Pichincha,1.0986122886681098,0,0,0,0
+fe6e2306-ab3f-4652-b441-415f82d7e731,no me parece nada bien que ya desde una semana la banca no permite hacer transferencias eso edta muy mal pesimo servicio,Banco Pichincha,3.1354942159291497,2,0,1,1

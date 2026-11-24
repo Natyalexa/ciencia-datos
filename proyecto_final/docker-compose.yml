@@ -1,0 +1,236 @@
+# Proyecto final · reseñas de apps bancarias de Ecuador
+# Levanta todo con un solo comando:   docker compose up -d --build
+#   Kestra      http://localhost:8080   orquestación (ingesta, lotes, monitoreo, reentrenamiento)
+#   MLflow      http://localhost:5000   experimentos y Model Registry
+#   API         http://localhost:8000   servicio de predicción (documentación en /docs)
+#   Tablero     http://localhost:8501   monitoreo lote por lote
+#   JupyterLab  http://localhost:8888   notebooks 01-07
+# dbt y Spark se construyen como imágenes (Kestra las ejecuta) y también se pueden correr a mano:
+#   docker compose run --rm dbt build      |      docker compose run --rm spark
+name: proyecto_final
+
+volumes:
+  kestra-db-data:
+  kestra-data:
+  # MLflow reutiliza los volúmenes del PSet #3 (experimentos, corridas y Model Registry con el
+  # champion). Si no existen, créalos vacíos: docker volume create pset_3_mlflow-db-data (y artifacts)
+  mlflow-db-data:
+    external: true
+    name: ${MLFLOW_DB_VOLUME:-pset_3_mlflow-db-data}
+  mlflow-artifacts:
+    external: true
+    name: ${MLFLOW_ARTIFACTS_VOLUME:-pset_3_mlflow-artifacts}
+  ollama-data:
+
+x-snowflake-env: &snowflake-env
+  SNOWFLAKE_ACCOUNT: ${SNOWFLAKE_ACCOUNT:?Define SNOWFLAKE_ACCOUNT en el archivo .env}
+  SNOWFLAKE_KEY_PATH: /secrets/rsa_key.p8
+
+services:
+  # ------------------------------------------------------------ Kestra
+  kestra-db:
+    image: postgres:18
+    volumes:
+      - kestra-db-data:/var/lib/postgresql
+    environment:
+      POSTGRES_DB: kestra
+      POSTGRES_USER: kestra
+      POSTGRES_PASSWORD: ${KESTRA_DB_PASSWORD:?Define KESTRA_DB_PASSWORD en el archivo .env}
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -d kestra -U kestra"]
+      interval: 10s
+      timeout: 10s
+      retries: 10
+
+  kestra:
+    image: kestra/kestra:latest
+    pull_policy: always
+    restart: unless-stopped
+    stop_grace_period: 6m
+    user: "root"   # necesario para usar el socket de Docker (entorno de desarrollo)
+    # Los flujos de ./kestra se cargan solos: al arrancar (--flow-path) y cada vez que se guarda
+    # un archivo (micronaut.io.watch). Ya no hay que copiarlos y pegarlos en la interfaz.
+    command: server standalone --flow-path /app/flows
+    env_file:
+      - .env       # SECRET_* (llave de Snowflake, token de administración) y ENV_SNOWFLAKE_ACCOUNT
+    volumes:
+      - kestra-data:/app/storage
+      - /var/run/docker.sock:/var/run/docker.sock
+      - /tmp/kestra-wd:/tmp/kestra-wd
+      - ./kestra:/app/flows
+    environment:
+      KESTRA_CONFIGURATION: |
+        micronaut:
+          io:
+            watch:
+              enabled: true
+              paths:
+                - /app/flows
+        datasources:
+          postgres:
+            url: jdbc:postgresql://kestra-db:5432/kestra
+            driverClassName: org.postgresql.Driver
+            username: kestra
+            password: ${KESTRA_DB_PASSWORD}
+        kestra:
+          repository:
+            type: postgres
+          storage:
+            type: local
+            local:
+              base-path: "/app/storage"
+          queue:
+            type: postgres
+          tasks:
+            tmp-dir:
+              path: /tmp/kestra-wd/tmp
+          url: http://localhost:8080/
+    ports:
+      - "8080:8080"
+    depends_on:
+      kestra-db:
+        condition: service_healthy
+
+  # ------------------------------------------------------------ MLflow
+  mlflow-db:
+    image: postgres:17
+    environment:
+      POSTGRES_DB: mlflow
+      POSTGRES_USER: mlflow
+      POSTGRES_PASSWORD: ${MLFLOW_DB_PASSWORD:?Define MLFLOW_DB_PASSWORD en el archivo .env}
+    volumes:
+      - mlflow-db-data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -d mlflow -U mlflow"]
+      interval: 10s
+      timeout: 10s
+      retries: 10
+
+  mlflow:
+    build: ./docker/mlflow
+    image: proyecto-final-mlflow
+    depends_on:
+      mlflow-db:
+        condition: service_healthy
+    ports:
+      - "5000:5000"
+    volumes:
+      - mlflow-artifacts:/mlartifacts
+    command: >
+      mlflow server --host 0.0.0.0 --port 5000
+      --backend-store-uri postgresql+psycopg2://mlflow:${MLFLOW_DB_PASSWORD}@mlflow-db:5432/mlflow
+      --artifacts-destination /mlartifacts --serve-artifacts
+      --allowed-hosts "mlflow:5000,localhost:*,127.0.0.1:*"
+    healthcheck:
+      test: ["CMD-SHELL", "python -c \"import urllib.request; urllib.request.urlopen('http://localhost:5000/health')\""]
+      interval: 15s
+      timeout: 5s
+      retries: 10
+
+  # ------------------------------------------------------------ servicio de predicción
+  api:
+    user: "0"   # necesario para leer la llave montada desde Windows
+    # Imagen publicada por GitHub Actions (cd.yml) con el hash del commit como tag.
+    # Para probar cambios locales sin publicar: docker compose build api
+    image: ghcr.io/natyalexa/resenas-bancos-api:${API_TAG:-latest}
+    build:
+      context: .
+      dockerfile: api/Dockerfile
+    depends_on:
+      mlflow:
+        condition: service_healthy
+    ports:
+      - "8000:8000"
+    environment:
+      <<: *snowflake-env
+      MLFLOW_TRACKING_URI: http://mlflow:5000
+      MODELO_URI: models:/resenas-bancos-ec-modelo@champion
+      RECARGA_SEG: "30"
+      MODO_RESPALDO: ${MODO_RESPALDO:-false}
+      ADMIN_TOKEN: ${ADMIN_TOKEN:?Define ADMIN_TOKEN en el archivo .env}
+    volumes:
+      - ./secrets:/secrets:ro
+
+  # ------------------------------------------------------------ tablero
+  tablero:
+    build: ./tablero
+    image: proyecto-final-tablero
+    ports:
+      - "8501:8501"
+    environment:
+      <<: *snowflake-env
+    volumes:
+      - ./secrets:/secrets:ro
+      - ./src:/app/src:ro
+      - ./docs:/app/docs:ro
+
+  # ------------------------------------------------------------ ciencia de datos
+  # La misma imagen sirve JupyterLab y los trabajos que Kestra ejecuta (proyecto-final-ds).
+  jupyter:
+    build:
+      context: .
+      dockerfile: docker/ds/Dockerfile
+    image: proyecto-final-ds
+    depends_on:
+      mlflow:
+        condition: service_healthy
+    working_dir: /work
+    ports:
+      - "8888:8888"
+    environment:
+      <<: *snowflake-env
+      MLFLOW_TRACKING_URI: http://mlflow:5000
+      API_URL: http://api:8000
+      OLLAMA_URL: http://ollama:11434
+      ADMIN_TOKEN: ${ADMIN_TOKEN}
+      EMB_CACHE: /work/.cache/embeddings.pkl
+      GIT_COMMIT: ${GIT_COMMIT:-no-disponible}
+    volumes:
+      - .:/work
+      - ./secrets:/secrets:ro
+    command: >
+      jupyter lab --ip=0.0.0.0 --port=8888 --no-browser --allow-root
+      --ServerApp.root_dir=/work
+      --IdentityProvider.token=${JUPYTER_TOKEN:?Define JUPYTER_TOKEN en el archivo .env}
+
+  # ------------------------------------------------------------ LLM local (línea base por prompting)
+  # Solo para el notebook 03c. Se levanta a demanda:
+  #   docker compose --profile llm up -d ollama
+  #   docker compose exec ollama ollama pull qwen2.5:1.5b
+  ollama:
+    image: ollama/ollama:latest
+    volumes:
+      - ollama-data:/root/.ollama
+    profiles: ["llm"]
+
+  # ------------------------------------------------------------ herramientas (a demanda)
+  dbt:
+    build: ./dbt
+    image: proyecto-final-dbt
+    working_dir: /usr/app
+    entrypoint: ["dbt"]
+    environment:
+      <<: *snowflake-env
+      DBT_PROFILES_DIR: /usr/app
+    volumes:
+      - ./dbt:/usr/app
+      - ./secrets:/secrets:ro
+    profiles: ["tools"]
+
+  spark:
+    build: ./spark
+    image: proyecto-final-spark
+    user: root
+    working_dir: /opt/spark/work-dir
+    environment:
+      <<: *snowflake-env
+    volumes:
+      - ./spark:/opt/spark/work-dir
+      - ./secrets:/secrets:ro
+    command: >
+      /opt/spark/bin/spark-submit
+      --packages net.snowflake:spark-snowflake_2.12:3.1.7
+      --conf spark.jars.ivy=/tmp/ivy
+      --conf spark.driver.extraJavaOptions=--add-opens=java.base/java.nio=ALL-UNNAMED
+      /opt/spark/work-dir/build_obt.py
+    profiles: ["tools"]
